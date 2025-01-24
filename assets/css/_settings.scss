@@ -1,0 +1,47 @@
+//colors
+
+// $color1: ;
+// $color2: ;
+// $color3: ;
+// $color4: ;
+// $color5: ;
+// $text: ;
+$black: #000;
+$white: #fff;
+$blackShadow: rgba(0, 0, 0, 0.25);
+$whiteShadow: rgba (255, 255, 255, 0.25);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
