@@ -1,0 +1,14 @@
+.buttonDegrade {
+  background: $degradeOverlay;
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 360px;
+  color: $white;
+  box-shadow: 0 0 5px $black;
+  transition: 0.2s ease;
+
+  &:hover {
+    background: $degradeOverlay2;
+    box-shadow: 0 0 10px $black;
+  }
+}

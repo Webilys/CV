@@ -1,0 +1,70 @@
+.hero {
+  height: 80vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  div {
+    // background: #000;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    // padding-left: 20px;
+    color: $white;
+
+    h1 {
+      padding-bottom: 30px;
+      text-shadow: 0 0 5px $black;
+    }
+
+    p {
+      padding-bottom: 30px;
+      text-shadow: 0 0 5px $black;
+      text-transform: uppercase;
+    }
+  }
+}
+
+#a-propos {
+  background: $degradeOverlay;
+  padding: 50px;
+  border-radius: 10px;
+  color: $white;
+  text-shadow: 0 0 5px $black;
+
+  h2 {
+    text-transform: uppercase;
+    &:after {
+      content: "";
+      display: block;
+      width: 40px;
+      margin: 20px 0;
+      border: 1.5px solid $white;
+    }
+  }
+}
+
+#competences {
+  margin: 50px auto;
+
+  .card {
+    color: $white;
+    text-shadow: 0 0 5px $black;
+    text-align: center;
+    background: none;
+    .card-header {
+      background: $degradeOverlay;
+      text-transform: uppercase;
+    }
+    .list-group-item {
+      background: $blackOverlay;
+      color: $white;
+      border: 0.5px solid $whiteShadow;
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

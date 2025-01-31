@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background: url(../img/hero.webp) center/contain;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.buttonDegrade {
+  background: linear-gradient(45deg, rgba(118, 77, 130, 0.8), rgba(184, 100, 101, 0.8), rgba(238, 170, 70, 0.8));
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 360px;
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.buttonDegrade:hover {
+  background: linear-gradient(45deg, rgba(238, 170, 70, 0.8), rgba(184, 100, 101, 0.8), rgba(118, 77, 130, 0.8));
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+header {
+  padding: 20px 0;
+}
+header .logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 360px;
+  background: linear-gradient(45deg, rgba(118, 77, 130, 0.8), rgba(184, 100, 101, 0.8), rgba(238, 170, 70, 0.8));
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+header .logo img {
+  padding: 10px;
+  width: 100px;
+  -webkit-filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.25));
+          filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.25));
+}
+
+footer {
+  padding: 20px 0;
+}
+footer p {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.hero {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero div {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+.hero div h1 {
+  padding-bottom: 30px;
+  text-shadow: 0 0 5px #000;
+}
+.hero div p {
+  padding-bottom: 30px;
+  text-shadow: 0 0 5px #000;
+  text-transform: uppercase;
+}
+
+#a-propos {
+  background: linear-gradient(45deg, rgba(118, 77, 130, 0.8), rgba(184, 100, 101, 0.8), rgba(238, 170, 70, 0.8));
+  padding: 50px;
+  border-radius: 10px;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+#a-propos h2 {
+  text-transform: uppercase;
+}
+#a-propos h2:after {
+  content: "";
+  display: block;
+  width: 40px;
+  margin: 20px 0;
+  border: 1.5px solid #fff;
+}
+
+#competences {
+  margin: 50px auto;
+}
+#competences .card {
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+  text-align: center;
+  background: none;
+}
+#competences .card .card-header {
+  background: linear-gradient(45deg, rgba(118, 77, 130, 0.8), rgba(184, 100, 101, 0.8), rgba(238, 170, 70, 0.8));
+  text-transform: uppercase;
+}
+#competences .card .list-group-item {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border: 0.5px solid rgba(255, 255, 255, 0.25);
+}
+#competences .card .list-group-item span {
+  text-transform: uppercase;
+}/*# sourceMappingURL=index.css.map */

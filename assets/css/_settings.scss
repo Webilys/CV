@@ -1,0 +1,49 @@
+//fonts
+
+$font1: "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+
+//colors
+
+$degradeOverlay: linear-gradient(
+  45deg,
+  rgba(118, 77, 130, 0.8),
+  rgba(184, 100, 101, 0.8),
+  rgba(238, 170, 70, 0.8)
+);
+$degradeOverlay2: linear-gradient(
+  45deg,
+  rgb(238, 170, 70, 0.8),
+  rgb(184, 100, 101, 0.8),
+  rgb(118, 77, 130, 0.8)
+);
+
+$color1: #eeaa46;
+$color2: #764d82;
+$white: #fff;
+$black: #000;
+$whiteShadow: rgba(255, 255, 255, 0.25);
+$blackShadow: rgba(0, 0, 0, 0.25);
+$blackOverlay: rgba(0, 0, 0, 0.8);
+
+//general
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: $font1;
+}
+
+body {
+  // background: $degrade;
+  background: url(../img/hero.webp) center/contain;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
