@@ -2,7 +2,17 @@ footer {
   padding: 20px 0;
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: $white;
+  }
+
+  a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: $white;
+
+    &:hover {
+      color: $color1;
+    }
   }
 }

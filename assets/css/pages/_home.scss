@@ -77,18 +77,9 @@
           content: "";
           display: block;
           width: 40px;
-          margin: 10px auto 20px;
+          margin: 10px auto;
           border: 1.5px solid $white;
         }
-      }
-    }
-    .col-md-3 {
-      &:first-of-type {
-        border-radius: 0 0 0 10px;
-      }
-
-      &:last-of-type {
-        border-radius: 0 0 10px 0;
       }
     }
   }
