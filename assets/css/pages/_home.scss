@@ -60,10 +60,35 @@
     }
     .list-group-item {
       background: $blackOverlay;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       color: $white;
-      border: 0.5px solid $whiteShadow;
+      text-shadow: 0 0 5px $black;
+      border: 1px solid $whiteShadow;
+
       span {
         text-transform: uppercase;
+        display: block;
+
+        &:after {
+          content: "";
+          display: block;
+          width: 40px;
+          margin: 10px auto 20px;
+          border: 1.5px solid $white;
+        }
+      }
+    }
+    .col-md-3 {
+      &:first-of-type {
+        border-radius: 0 0 0 10px;
+      }
+
+      &:last-of-type {
+        border-radius: 0 0 10px 0;
       }
     }
   }
