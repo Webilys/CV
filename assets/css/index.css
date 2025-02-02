@@ -133,6 +133,9 @@ footer a:hover {
 #competences {
   margin: 50px auto;
 }
+#competences .container {
+  margin-top: 50px;
+}
 #competences .card {
   color: #fff;
   text-shadow: 0 0 5px #000;
@@ -172,4 +175,13 @@ footer a:hover {
   width: 40px;
   margin: 10px auto;
   border: 1.5px solid #fff;
+}
+#competences .card .col-md-3:first-of-type {
+  border-radius: 0 0 0 10px;
+}
+#competences .card .col-md-3:last-of-type {
+  border-radius: 0 0 10px 0;
+}
+#competences .card .col-12:last-of-type {
+  border-radius: 0 0 10px 10px;
 }/*# sourceMappingURL=index.css.map */
