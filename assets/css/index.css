@@ -247,6 +247,9 @@ a {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+#button-call-fixed i {
+  cursor: pointer;
+}
 
 header {
   padding: 20px 0;
