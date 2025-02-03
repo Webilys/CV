@@ -48,13 +48,13 @@
     text-shadow: 0 0 5px $blackShadow;
 
     &::placeholder {
-      color: #dadada;
+      color: $color4;
     }
   }
 
   .comments {
     font-style: italic;
-    color: #d82c2e;
+    color: $color3;
     height: 25px;
   }
 

@@ -4,11 +4,11 @@ const btnAboutUs = document.getElementById("btn-about-us");
 const btnContact = document.getElementById("button-contact");
 
 btnAboutUs.addEventListener("click", () => {
-  window.location.href = "./index.html#a-propos";
+  window.location.href = "./index.php#a-propos";
 });
 
 btnContact.addEventListener("click", () => {
-  window.location.href = "./index.html#contact";
+  window.location.href = "./index.php#contact";
 });
 
 //----------------------Gallery-------------------------------------------

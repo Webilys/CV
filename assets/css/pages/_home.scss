@@ -4,14 +4,12 @@
   justify-content: start;
   align-items: center;
   div {
-    // background: #000;
     height: 100%;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    // padding-left: 20px;
     color: $white;
 
     h1 {
@@ -51,9 +49,6 @@
 
 #competences {
   margin: 50px auto;
-  // background: $blackOverlay;
-  // padding: 50px;
-  // border-radius: 10px;
   text-shadow: 0 0 5px $black;
 
   h2 {
@@ -88,7 +83,6 @@
 
     .progress {
       height: 25px;
-      // background: $degradeOverlay;
       box-shadow: 0 0 10px $black;
       font-size: 0.9rem;
       .progress-bar {

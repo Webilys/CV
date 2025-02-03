@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     if ($array["isSucces"]) {
         $headers = "De : {$array["firstname"]} {$array["name"]} <{$array["email"]}>\r\nRepondre à : {$array["email"]}";
-        mail($emailTo, "formulaire du site", $emailText, $headers);
+        mail($emailTo, "formulaire de contact", "Vous avez reçu un nouveau formulaire de contact : <br>" + $emailText, additional_headers: $headers);
     }
 
     echo json_encode($array);

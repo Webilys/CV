@@ -20,6 +20,9 @@ $degradeOverlay2: linear-gradient(
 
 $color1: #eeaa46;
 $color2: #764d82;
+$color3: #d82c2e;
+$color4: #dadada;
+
 $white: #fff;
 $black: #000;
 $whiteShadow: rgba(255, 255, 255, 0.25);
@@ -39,7 +42,6 @@ $whiteOverlay: rgba(255, 255, 255, 0.9);
 }
 
 body {
-  // background: $degrade;
   background: url(../img/hero.webp) center/contain;
   background-attachment: fixed;
   width: 100%;
