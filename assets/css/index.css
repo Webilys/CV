@@ -73,6 +73,7 @@ a {
 }
 .gallery-wrap .gallery div a {
   width: 100%;
+  border-radius: 10px;
 }
 .gallery-wrap .gallery div a img {
   width: 100%;
@@ -82,6 +83,7 @@ a {
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
+  border-radius: 10px;
 }
 .gallery-wrap .gallery div a img:hover {
   -webkit-filter: grayscale(0);

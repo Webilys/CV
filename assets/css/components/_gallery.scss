@@ -21,11 +21,13 @@
       flex: none;
       a {
         width: 100%;
+        border-radius: 10px;
 
         img {
           width: 100%;
           filter: grayscale(100%);
           transition: transform 0.5s;
+          border-radius: 10px;
 
           &:hover {
             filter: grayscale(0);
