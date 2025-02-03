@@ -22,7 +22,7 @@ a {
 }
 
 .buttonDegrade {
-  background: linear-gradient(45deg, rgba(118, 77, 130, 0.8), rgba(184, 100, 101, 0.8), rgba(238, 170, 70, 0.8));
+  background: linear-gradient(45deg, rgba(118, 77, 130, 0.9), rgba(184, 100, 101, 0.9), rgba(238, 170, 70, 0.9));
   border: 0;
   padding: 10px 30px;
   border-radius: 360px;
@@ -33,7 +33,7 @@ a {
   transition: 0.2s ease;
 }
 .buttonDegrade:hover {
-  background: linear-gradient(45deg, rgba(238, 170, 70, 0.8), rgba(184, 100, 101, 0.8), rgba(118, 77, 130, 0.8));
+  background: linear-gradient(45deg, rgba(238, 170, 70, 0.9), rgba(184, 100, 101, 0.9), rgba(118, 77, 130, 0.9));
   -webkit-box-shadow: 0 0 10px #000;
           box-shadow: 0 0 10px #000;
 }
@@ -45,7 +45,7 @@ header .logo {
   width: 100px;
   height: 100px;
   border-radius: 360px;
-  background: linear-gradient(45deg, rgba(118, 77, 130, 0.8), rgba(184, 100, 101, 0.8), rgba(238, 170, 70, 0.8));
+  background: linear-gradient(45deg, rgba(118, 77, 130, 0.9), rgba(184, 100, 101, 0.9), rgba(238, 170, 70, 0.9));
   -webkit-box-shadow: 0 0 10px #000;
           box-shadow: 0 0 10px #000;
 }
@@ -113,7 +113,7 @@ footer a:hover {
 }
 
 #a-propos {
-  background: linear-gradient(45deg, rgba(118, 77, 130, 0.8), rgba(184, 100, 101, 0.8), rgba(238, 170, 70, 0.8));
+  background: linear-gradient(45deg, rgba(118, 77, 130, 0.9), rgba(184, 100, 101, 0.9), rgba(238, 170, 70, 0.9));
   padding: 50px;
   border-radius: 10px;
   color: #fff;
@@ -133,55 +133,22 @@ footer a:hover {
 #competences {
   margin: 50px auto;
 }
-#competences .container {
-  margin-top: 50px;
-}
-#competences .card {
+#competences h2,
+#competences h3,
+#competences h5 {
   color: #fff;
-  text-shadow: 0 0 5px #000;
-  text-align: center;
-  background: none;
+  text-shadow: 0 0 10px #000;
 }
-#competences .card .card-header {
-  background: linear-gradient(45deg, rgba(118, 77, 130, 0.8), rgba(184, 100, 101, 0.8), rgba(238, 170, 70, 0.8));
-  text-transform: uppercase;
+#competences h3 {
+  padding-top: 40px;
 }
-#competences .card .list-group-item {
-  background: rgba(0, 0, 0, 0.8);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #fff;
-  text-shadow: 0 0 5px #000;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+#competences .container h5 {
+  margin: 20px 0;
 }
-#competences .card .list-group-item span {
-  text-transform: uppercase;
-  display: block;
-}
-#competences .card .list-group-item span:after {
-  content: "";
-  display: block;
-  width: 40px;
-  margin: 10px auto;
-  border: 1.5px solid #fff;
-}
-#competences .card .col-md-3:first-of-type {
-  border-radius: 0 0 0 10px;
-}
-#competences .card .col-md-3:last-of-type {
-  border-radius: 0 0 10px 0;
-}
-#competences .card .col-12:last-of-type {
-  border-radius: 0 0 10px 10px;
+#competences .container .progress {
+  padding: 10px;
+  background: linear-gradient(45deg, rgba(118, 77, 130, 0.9), rgba(184, 100, 101, 0.9), rgba(238, 170, 70, 0.9));
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+  font-size: 0.9rem;
 }/*# sourceMappingURL=index.css.map */

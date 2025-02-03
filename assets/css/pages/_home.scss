@@ -48,57 +48,27 @@
 
 #competences {
   margin: 50px auto;
+  h2,
+  h3,
+  h5 {
+    color: $white;
+    text-shadow: 0 0 10px $black;
+  }
+
+  h3 {
+    padding-top: 40px;
+  }
 
   .container {
-    margin-top: 50px;
-  }
-  .card {
-    color: $white;
-    text-shadow: 0 0 5px $black;
-    text-align: center;
-    background: none;
-    .card-header {
+    h5 {
+      margin: 20px 0;
+    }
+
+    .progress {
+      padding: 10px;
       background: $degradeOverlay;
-      text-transform: uppercase;
-    }
-    .list-group-item {
-      background: $blackOverlay;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      color: $white;
-      text-shadow: 0 0 5px $black;
-      border: 1px solid $whiteShadow;
-
-      span {
-        text-transform: uppercase;
-        display: block;
-
-        &:after {
-          content: "";
-          display: block;
-          width: 40px;
-          margin: 10px auto;
-          border: 1.5px solid $white;
-        }
-      }
-    }
-
-    .col-md-3 {
-      &:first-of-type {
-        border-radius: 0 0 0 10px;
-      }
-
-      &:last-of-type {
-        border-radius: 0 0 10px 0;
-      }
-    }
-
-    .col-12 {
-      &:last-of-type {
-        border-radius: 0 0 10px 10px;
-      }
+      box-shadow: 0 0 10px $black;
+      font-size: 0.9rem;
     }
   }
 }

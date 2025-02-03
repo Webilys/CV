@@ -7,15 +7,15 @@ $font1: "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 
 $degradeOverlay: linear-gradient(
   45deg,
-  rgba(118, 77, 130, 0.8),
-  rgba(184, 100, 101, 0.8),
-  rgba(238, 170, 70, 0.8)
+  rgba(118, 77, 130, 0.9),
+  rgba(184, 100, 101, 0.9),
+  rgba(238, 170, 70, 0.9)
 );
 $degradeOverlay2: linear-gradient(
   45deg,
-  rgb(238, 170, 70, 0.8),
-  rgb(184, 100, 101, 0.8),
-  rgb(118, 77, 130, 0.8)
+  rgb(238, 170, 70, 0.9),
+  rgb(184, 100, 101, 0.9),
+  rgb(118, 77, 130, 0.9)
 );
 
 $color1: #eeaa46;
@@ -24,8 +24,8 @@ $white: #fff;
 $black: #000;
 $whiteShadow: rgba(255, 255, 255, 0.25);
 $blackShadow: rgba(0, 0, 0, 0.25);
-$blackOverlay: rgba(0, 0, 0, 0.8);
-$whiteOverlay: rgba(255, 255, 255, 0.8);
+$blackOverlay: rgba(0, 0, 0, 0.9);
+$whiteOverlay: rgba(255, 255, 255, 0.9);
 
 //general
 
