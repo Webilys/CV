@@ -39,7 +39,26 @@ a {
           box-shadow: 0 0 10px #000;
 }
 
-.gallery-wrap {
+#portfolio {
+  margin: 50px auto;
+}
+#portfolio h2 {
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  text-align: center;
+}
+#portfolio h2:after {
+  content: "";
+  display: block;
+  width: 40px;
+  margin: 20px auto;
+  border: 1.5px solid #fff;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+#portfolio .gallery-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,17 +70,17 @@ a {
           justify-content: center;
   margin: 50px auto 10%;
 }
-.gallery-wrap .gallery {
+#portfolio .gallery-wrap .gallery {
   width: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   overflow: scroll;
 }
-.gallery-wrap .gallery::-webkit-scrollbar {
+#portfolio .gallery-wrap .gallery::-webkit-scrollbar {
   display: none;
 }
-.gallery-wrap .gallery div {
+#portfolio .gallery-wrap .gallery div {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -72,15 +91,15 @@ a {
           flex: none;
 }
 @media screen and (max-width: 720px) {
-  .gallery-wrap .gallery div {
+  #portfolio .gallery-wrap .gallery div {
     grid-template-columns: 1fr;
   }
 }
-.gallery-wrap .gallery div a {
+#portfolio .gallery-wrap .gallery div a {
   width: 100%;
   border-radius: 10px;
 }
-.gallery-wrap .gallery div a img {
+#portfolio .gallery-wrap .gallery div a img {
   width: 100%;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
@@ -90,15 +109,15 @@ a {
   transition: transform 0.5s, -webkit-transform 0.5s;
   border-radius: 10px;
 }
-.gallery-wrap .gallery div a img:hover {
+#portfolio .gallery-wrap .gallery div a img:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
   cursor: pointer;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-.gallery-wrap #backBtn,
-.gallery-wrap #nextBtn {
+#portfolio .gallery-wrap #backBtn,
+#portfolio .gallery-wrap #nextBtn {
   font-size: 50px;
   cursor: pointer;
   margin: 40px;
@@ -112,10 +131,91 @@ a {
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
-.gallery-wrap #backBtn:hover,
-.gallery-wrap #nextBtn:hover {
+#portfolio .gallery-wrap #backBtn:hover,
+#portfolio .gallery-wrap #nextBtn:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+#contact {
+  margin: 50px auto;
+  background: linear-gradient(45deg, rgba(118, 77, 130, 0.9), rgba(184, 100, 101, 0.9), rgba(238, 170, 70, 0.9));
+  border-radius: 10px;
+  padding: 50px;
+}
+#contact h2 {
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  text-align: center;
+}
+#contact h2:after {
+  content: "";
+  display: block;
+  width: 40px;
+  margin: 20px auto;
+  border: 1.5px solid #fff;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+#contact #contact-form {
+  font-size: 1rem;
+}
+#contact .colorized {
+  color: #eeaa46;
+}
+#contact label {
+  padding-bottom: 20px;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+#contact input[type=text],
+#contact input[type=email],
+#contact input[type=tel],
+#contact textarea {
+  border-radius: 360px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+#contact .form-control {
+  height: 40px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+#contact .form-control::-webkit-input-placeholder {
+  color: #dadada;
+}
+#contact .form-control::-moz-placeholder {
+  color: #dadada;
+}
+#contact .form-control:-ms-input-placeholder {
+  color: #dadada;
+}
+#contact .form-control::-ms-input-placeholder {
+  color: #dadada;
+}
+#contact .form-control::placeholder {
+  color: #dadada;
+}
+#contact .comments {
+  font-style: italic;
+  color: #d82c2e;
+  height: 25px;
+}
+#contact .strong {
+  padding-bottom: 10px;
+  font-size: 0.9rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+#contact .thank-you {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
 }
 
 header {
@@ -377,86 +477,4 @@ footer a:hover {
   #formations .timeline .timeline-item .timeline-content p {
     font-size: x-small;
   }
-}
-
-#portfolio {
-  margin: 50px auto;
-}
-#portfolio h2 {
-  color: #fff;
-  text-shadow: 0 0 10px #000;
-  text-transform: uppercase;
-  padding-bottom: 30px;
-  text-align: center;
-}
-#portfolio h2:after {
-  content: "";
-  display: block;
-  width: 40px;
-  margin: 20px auto;
-  border: 1.5px solid #fff;
-  -webkit-box-shadow: 0 0 10px #000;
-          box-shadow: 0 0 10px #000;
-}
-
-#contact {
-  margin: 50px auto;
-  background: linear-gradient(45deg, rgba(118, 77, 130, 0.9), rgba(184, 100, 101, 0.9), rgba(238, 170, 70, 0.9));
-  border-radius: 10px;
-  padding: 50px;
-}
-#contact h2 {
-  color: #fff;
-  text-shadow: 0 0 10px #000;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  text-align: center;
-}
-#contact h2:after {
-  content: "";
-  display: block;
-  width: 40px;
-  margin: 20px auto;
-  border: 1.5px solid #fff;
-  -webkit-box-shadow: 0 0 10px #000;
-          box-shadow: 0 0 10px #000;
-}
-#contact #contact-form {
-  font-size: 1rem;
-}
-#contact .colorized {
-  color: #eeaa46;
-}
-#contact label {
-  padding-bottom: 20px;
-  color: #fff;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-}
-#contact input[type=text],
-#contact input[type=email],
-#contact input[type=tel],
-#contact textarea {
-  border-radius: 360px;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-}
-#contact .form-control {
-  height: 40px;
-}
-#contact .comments {
-  font-style: italic;
-  color: #d82c2e;
-  height: 25px;
-}
-#contact .strong {
-  padding-bottom: 10px;
-  font-size: 0.9rem;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-}
-#contact .thank-you {
-  text-align: center;
-  margin-top: 15px;
-  font-weight: bold;
-  font-size: 1rem;
-  color: greenyellow;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,84 @@
+#portfolio {
+  margin: 50px auto;
+
+  h2 {
+    color: $white;
+    text-shadow: 0 0 10px $black;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    text-align: center;
+    &:after {
+      content: "";
+      display: block;
+      width: 40px;
+      margin: 20px auto;
+      border: 1.5px solid $white;
+      box-shadow: 0 0 10px $black;
+    }
+  }
+
+  .gallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 10%;
+
+    .gallery {
+      width: 900px;
+      display: flex;
+      overflow: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      div {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        padding: 10px;
+        flex: none;
+
+        @media screen and (max-width: 720px) {
+          grid-template-columns: 1fr;
+        }
+        a {
+          width: 100%;
+          border-radius: 10px;
+
+          img {
+            width: 100%;
+            filter: grayscale(100%);
+            transition: transform 0.5s;
+            border-radius: 10px;
+
+            &:hover {
+              filter: grayscale(0);
+              cursor: pointer;
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+    #backBtn,
+    #nextBtn {
+      font-size: 50px;
+      cursor: pointer;
+      margin: 40px;
+      // width: 50px;
+      // height: 50px;
+      border-radius: 50%;
+      background: $degradeOverlay;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      transition: transform 0.3s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
