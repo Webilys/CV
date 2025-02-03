@@ -48,6 +48,18 @@
 
 #competences {
   margin: 50px auto;
+
+  h2 {
+    text-transform: uppercase;
+    &:after {
+      content: "";
+      display: block;
+      width: 40px;
+      margin: 20px 0;
+      border: 1.5px solid $white;
+    }
+  }
+
   h2,
   h3,
   h5 {
@@ -65,10 +77,115 @@
     }
 
     .progress {
-      padding: 10px;
-      background: $degradeOverlay;
+      height: 25px;
+      // background: $degradeOverlay;
       box-shadow: 0 0 10px $black;
       font-size: 0.9rem;
+      .progress-bar {
+        height: 25px;
+        background: $degradeOverlay;
+      }
+    }
+  }
+  .competences-techniques {
+    .progress {
+      background: $degradeOverlay2;
+    }
+  }
+}
+
+#formations {
+  margin: 50px auto;
+  background: $degradeOverlay;
+  border-radius: 10px;
+  padding: 50px;
+  text-align: center;
+
+  h2 {
+    color: $white;
+    text-shadow: 0 0 10px $black;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    &:after {
+      content: "";
+      display: block;
+      width: 40px;
+      margin: 20px auto;
+      border: 1.5px solid $white;
+    }
+  }
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 4px;
+      background: $white;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+      box-shadow: 0 0 5px $blackShadow;
+    }
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 10px 40px;
+      box-sizing: border-box;
+      &:nth-child(odd) {
+        left: 0;
+        text-align: right;
+      }
+      &:nth-child(even) {
+        left: 50%;
+        text-align: left;
+      }
+      .timeline-badge {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        background: $degradeOverlay;
+        box-shadow: 0 0 10px $blackShadow;
+        text-shadow: 0 0 5px $blackShadow;
+        border-radius: 50%;
+        border: 2px solid $white;
+        color: $white;
+        padding: 10px;
+        font-weight: bold;
+        transform: translate(-50%, -30px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .timeline-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: $whiteShadow;
+        box-shadow: 0 0 10px $blackShadow;
+        text-shadow: 0 0 5px $blackShadow;
+        padding: 40px 30px 10px;
+        border-radius: 10px;
+        color: $white;
+        text-align: center;
+        font-size: 1rem;
+
+        h5 {
+          &:after {
+            content: "";
+            display: block;
+            width: 40px;
+            margin: 20px auto 10px;
+            border: 1.5px solid $white;
+          }
+        }
+      }
     }
   }
 }
