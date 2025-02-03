@@ -36,12 +36,15 @@
 
   h2 {
     text-transform: uppercase;
+    text-shadow: 0 0 10px $black;
+
     &:after {
       content: "";
       display: block;
       width: 40px;
       margin: 20px 0;
       border: 1.5px solid $white;
+      box-shadow: 0 0 10px $black;
     }
   }
 }
@@ -51,12 +54,15 @@
 
   h2 {
     text-transform: uppercase;
+    text-shadow: 0 0 10px $black;
+
     &:after {
       content: "";
       display: block;
       width: 40px;
       margin: 20px 0;
       border: 1.5px solid $white;
+      box-shadow: 0 0 10px $black;
     }
   }
 
@@ -112,6 +118,7 @@
       width: 40px;
       margin: 20px auto;
       border: 1.5px solid $white;
+      box-shadow: 0 0 10px $black;
     }
   }
   .timeline {
@@ -195,6 +202,26 @@
           }
         }
       }
+    }
+  }
+}
+
+#portfolio {
+  margin: 50px auto;
+
+  h2 {
+    color: $white;
+    text-shadow: 0 0 10px $black;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    text-align: center;
+    &:after {
+      content: "";
+      display: block;
+      width: 40px;
+      margin: 20px auto;
+      border: 1.5px solid $white;
+      box-shadow: 0 0 10px $black;
     }
   }
 }

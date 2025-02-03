@@ -1,0 +1,52 @@
+.gallery-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 10%;
+
+  .gallery {
+    width: 900px;
+    display: flex;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    div {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      padding: 10px;
+      flex: none;
+      a {
+        width: 100%;
+
+        img {
+          width: 100%;
+          filter: grayscale(100%);
+          transition: transform 0.5s;
+
+          &:hover {
+            filter: grayscale(0);
+            cursor: pointer;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+  #backBtn,
+  #nextBtn {
+    font-size: 50px;
+    cursor: pointer;
+    margin: 40px;
+    // width: 50px;
+    // height: 50px;
+    border-radius: 50%;
+    background: $degradeOverlay;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
