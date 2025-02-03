@@ -177,12 +177,21 @@
         font-size: 1rem;
 
         h5 {
+          @media screen and (max-width: 720px) {
+            font-size: small;
+          }
           &:after {
             content: "";
             display: block;
             width: 40px;
             margin: 20px auto 10px;
             border: 1.5px solid $white;
+          }
+        }
+
+        p {
+          @media screen and (max-width: 720px) {
+            font-size: x-small;
           }
         }
       }

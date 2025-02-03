@@ -8,6 +8,7 @@
       -ms-user-select: none;
           user-select: none;
   font-family: "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  cursor: url(../img/cursor-white.ico), pointer;
 }
 
 body {
@@ -272,10 +273,20 @@ footer a:hover {
   text-align: center;
   font-size: 1rem;
 }
+@media screen and (max-width: 720px) {
+  #formations .timeline .timeline-item .timeline-content h5 {
+    font-size: small;
+  }
+}
 #formations .timeline .timeline-item .timeline-content h5:after {
   content: "";
   display: block;
   width: 40px;
   margin: 20px auto 10px;
   border: 1.5px solid #fff;
+}
+@media screen and (max-width: 720px) {
+  #formations .timeline .timeline-item .timeline-content p {
+    font-size: x-small;
+  }
 }/*# sourceMappingURL=index.css.map */
