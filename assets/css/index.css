@@ -17,6 +17,12 @@ body {
   width: 100%;
   height: 100vh;
 }
+@media screen and (max-width: 720px) {
+  body {
+    background: url(../img/hero.webp) center/cover;
+    background-attachment: fixed;
+  }
+}
 
 a {
   text-decoration: none;
