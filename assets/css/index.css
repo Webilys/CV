@@ -218,6 +218,35 @@ a {
   color: #fff;
 }
 
+#button-call-fixed {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, rgba(118, 77, 130, 0.9), rgba(184, 100, 101, 0.9), rgba(238, 170, 70, 0.9));
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#button-call-fixed:hover {
+  background: linear-gradient(45deg, rgba(238, 170, 70, 0.9), rgba(184, 100, 101, 0.9), rgba(118, 77, 130, 0.9));
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 header {
   padding: 20px 0;
 }
