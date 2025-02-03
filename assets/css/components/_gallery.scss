@@ -12,6 +12,7 @@
     &::-webkit-scrollbar {
       display: none;
     }
+
     div {
       width: 100%;
       display: grid;
@@ -50,5 +51,10 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }
