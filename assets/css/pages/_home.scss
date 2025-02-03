@@ -31,8 +31,8 @@
   background: $degradeOverlay;
   padding: 50px;
   border-radius: 10px;
-  color: $white;
   text-shadow: 0 0 5px $black;
+  color: $white;
 
   h2 {
     text-transform: uppercase;
@@ -51,6 +51,10 @@
 
 #competences {
   margin: 50px auto;
+  // background: $blackOverlay;
+  // padding: 50px;
+  // border-radius: 10px;
+  text-shadow: 0 0 5px $black;
 
   h2 {
     text-transform: uppercase;
@@ -66,15 +70,15 @@
     }
   }
 
+  h3 {
+    padding-top: 40px;
+  }
+
   h2,
   h3,
   h5 {
     color: $white;
     text-shadow: 0 0 10px $black;
-  }
-
-  h3 {
-    padding-top: 40px;
   }
 
   .container {
@@ -223,5 +227,72 @@
       border: 1.5px solid $white;
       box-shadow: 0 0 10px $black;
     }
+  }
+}
+
+#contact {
+  margin: 50px auto;
+  background: $degradeOverlay;
+  border-radius: 10px;
+  padding: 50px;
+
+  h2 {
+    color: $white;
+    text-shadow: 0 0 10px $black;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    text-align: center;
+    &:after {
+      content: "";
+      display: block;
+      width: 40px;
+      margin: 20px auto;
+      border: 1.5px solid $white;
+      box-shadow: 0 0 10px $black;
+    }
+  }
+
+  #contact-form {
+    font-size: 1rem;
+  }
+
+  .colorized {
+    color: $color1;
+  }
+
+  label {
+    padding-bottom: 20px;
+    color: $white;
+    text-shadow: 0 0 5px $blackShadow;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    border-radius: 360px;
+    box-shadow: 0 0 5px $blackShadow;
+  }
+  .form-control {
+    height: 40px;
+  }
+
+  .comments {
+    font-style: italic;
+    color: #d82c2e;
+    height: 25px;
+  }
+
+  .strong {
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+    text-shadow: 0 0 5px $blackShadow;
+  }
+
+  .thank-you {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: greenyellow;
   }
 }

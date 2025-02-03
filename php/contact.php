@@ -1,0 +1,77 @@
+<?php
+$array = ["firstname" => "", "name" => "", "email" => "", "telephone" => "", "message" => "", "firstnameError" => "", "nameError" => "", "emailError" => "", "telephoneError" => "", "messageError" => "", "isSucces" => false];
+
+
+$emailTo = "contact@webilys.fr";
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    $array["firstname"] = verifyInput($_POST['firstname']);
+    $array["name"] = verifyInput($_POST['name']);
+    $array["email"] = verifyInput($_POST['email']);
+    $array["telephone"] = verifyInput($_POST['telephone']);
+    $array["message"] = verifyInput($_POST['message']);
+    $array["isSucces"] = true;
+    $emailText = "";
+
+    if (empty($array["firstname"])) {
+        $array["firstnameError"] = "Je veux connaître ton prénom !";
+        $array["isSucces"] = false;
+    } else {
+        $emailText .= "Prénom : {$array["firstname"]}\n";
+    }
+
+    if (empty($array["name"])) {
+        $array["nameError"] = "Je veux connaître ton nom !";
+        $array["isSucces"] = false;
+    } else {
+        $emailText .= "Nom : {$array["name"]}\n";
+    }
+
+
+    if (!isEmail($array["email"])) {
+        $array["emailError"] = "Ajoute ton email !";
+        $array["isSucces"] = false;
+    } else {
+        $emailText .= "Email : {$array["email"]}\n";
+    }
+
+    if (!isPhone($array["telephone"])) {
+        $array["telephoneError"] = "Ajoute ton numéro !";
+        $array["isSucces"] = false;
+    } else {
+        $emailText .= "Tel. : {$array["telephone"]}\n";
+    }
+
+    if (empty($array["message"])) {
+        $array["messageError"] = "Écris-moi un message !";
+        $array["isSucces"] = false;
+    } else {
+        $emailText .= "Message : {$array["message"]}\n";
+    }
+
+    if ($array["isSucces"]) {
+        $headers = "De : {$array["firstname"]} {$array["name"]} <{$array["email"]}>\r\nRepondre à : {$array["email"]}";
+        mail($emailTo, "formulaire du site", $emailText, $headers);
+    }
+
+    echo json_encode($array);
+}
+
+function isPhone($var)
+{
+    return preg_match("/^[0-9 .]*$/", $var);
+}
+function isEmail($var)
+{
+    return filter_var($var, FILTER_VALIDATE_EMAIL);
+
+}
+function verifyInput($var)
+{
+    $var = trim($var);
+    $var = stripslashes($var);
+    $var = htmlspecialchars($var);
+    return $var;
+}
+
+?>
