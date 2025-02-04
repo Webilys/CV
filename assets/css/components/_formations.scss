@@ -5,7 +5,7 @@
   padding: 50px;
   text-align: center;
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 576px) {
     padding: 20px;
   }
 
@@ -86,7 +86,7 @@
         font-size: 1rem;
 
         h5 {
-          @media screen and (max-width: 720px) {
+          @media screen and (max-width: 576px) {
             font-size: small;
           }
           &:after {
@@ -99,7 +99,7 @@
         }
 
         p {
-          @media screen and (max-width: 720px) {
+          @media screen and (max-width: 576px) {
             font-size: x-small;
           }
         }

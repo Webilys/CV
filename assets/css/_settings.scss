@@ -22,7 +22,6 @@ $color1: #eeaa46;
 $color2: #764d82;
 $color3: #d82c2e;
 $color4: #dadada;
-
 $white: #fff;
 $black: #000;
 $whiteShadow: rgba(255, 255, 255, 0.25);
@@ -31,7 +30,6 @@ $blackOverlay: rgba(0, 0, 0, 0.9);
 $whiteOverlay: rgba(255, 255, 255, 0.9);
 
 //general
-
 * {
   margin: 0;
   padding: 0;
@@ -47,10 +45,9 @@ body {
   width: 100%;
   height: 100vh;
 
-  @media screen and (max-width: 720px) {
-    background-position-y: 0;
-    background-position-x: 50%;
-    background-size: cover;
+  @media screen and (max-width: 576px) {
+    background: url(../img/hero-mobile.png) center/375px;
+    // background-size: 375px;
   }
 }
 

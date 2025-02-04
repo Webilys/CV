@@ -11,6 +11,7 @@
 <body>
   <div class="container">
     <?php include "./includes/header.php"; ?>
+
     <main>
       <section class="hero">
         <div>
