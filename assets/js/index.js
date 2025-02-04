@@ -37,7 +37,7 @@ function scrollGallery() {
   if (windowWidth > 760) {
     setInterval(() => {
       scrollContainer.style.scrollBehavior = "smooth";
-      scrollContainer.scrollLeft += 856;
+      scrollContainer.scrollLeft += 900;
     }, 2500);
   } else {
     setInterval(() => {
