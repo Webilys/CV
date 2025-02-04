@@ -262,6 +262,12 @@
           <i class="bi bi-arrow-left-circle-fill" id="backBtn"></i>
           <div class="gallery">
             <div>
+              <a href="https://webilys.fr/" target="_blank">
+                <img src="./assets/img/webilys.png" alt="Webilys" />
+              </a>
+
+            </div>
+            <div>
               <a href="https://voice-converter.webilys.fr/" target="_blank">
                 <img src="./assets/img/voice-converter.png" alt="Voice Converter" />
               </a>
