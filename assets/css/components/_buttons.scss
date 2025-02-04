@@ -6,7 +6,10 @@
   color: $white;
   box-shadow: 0 0 5px $black;
   transition: 0.2s ease;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   &:hover {
     background: $degradeOverlay2;
     box-shadow: 0 0 10px $black;

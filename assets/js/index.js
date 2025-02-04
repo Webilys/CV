@@ -5,7 +5,7 @@ const btnContact = document.getElementById("button-contact");
 const buttonCallFixed = document.getElementById("button-call-fixed");
 
 btnAboutUs.addEventListener("click", () => {
-  window.location.href = "./index.php#a-propos";
+  window.location.href = "https://github.com/Webilys";
 });
 
 btnContact.addEventListener("click", () => {
