@@ -39,6 +39,9 @@ function scrollGallery() {
       scrollContainer.style.scrollBehavior = "smooth";
       scrollContainer.scrollLeft += 311;
     }, 2500);
+  } else {
+    scrollContainer.style.scrollBehavior = "smooth";
+    scrollContainer.scrollLeft -= 856;
   }
 }
 

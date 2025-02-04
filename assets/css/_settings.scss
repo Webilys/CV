@@ -38,7 +38,7 @@ $whiteOverlay: rgba(255, 255, 255, 0.9);
   box-sizing: border-box;
   user-select: none;
   font-family: $font1;
-  cursor: url(../img/cursor-white.ico), pointer;
+  cursor: default;
 }
 
 body {
