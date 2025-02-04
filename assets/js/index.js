@@ -34,12 +34,7 @@ backBtn.addEventListener("click", () => {
 });
 
 function scrollGallery() {
-  if (windowWidth > 760) {
-    setInterval(() => {
-      scrollContainer.style.scrollBehavior = "smooth";
-      scrollContainer.scrollLeft += 900;
-    }, 2500);
-  } else {
+  if (windowWidth < 760) {
     setInterval(() => {
       scrollContainer.style.scrollBehavior = "smooth";
       scrollContainer.scrollLeft += 311;
