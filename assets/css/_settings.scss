@@ -48,8 +48,8 @@ body {
   height: 100vh;
 
   @media screen and (max-width: 720px) {
-    background: url(../img/hero.webp) center/cover;
-    background-attachment: fixed;
+    background: url(../img/hero.webp) fixed center/cover;
+    background-position: 50%;
   }
 }
 

@@ -19,8 +19,8 @@ body {
 }
 @media screen and (max-width: 720px) {
   body {
-    background: url(../img/hero.webp) center/cover;
-    background-attachment: fixed;
+    background: url(../img/hero.webp) fixed center/cover;
+    background-position: 50%;
   }
 }
 
