@@ -18,19 +18,29 @@ buttonCallFixed.addEventListener("click", () => {
 
 //----------------------Gallery-------------------------------------------
 
+let portfolioSection = document.getElementById("portfolio");
 let scrollContainer = document.querySelector(".gallery");
 let backBtn = document.getElementById("backBtn");
 let nextBtn = document.getElementById("nextBtn");
 
 nextBtn.addEventListener("click", () => {
   scrollContainer.style.scrollBehavior = "smooth";
-  scrollContainer.scrollLeft += 860;
+  scrollContainer.scrollLeft += 856;
 });
 
 backBtn.addEventListener("click", () => {
   scrollContainer.style.scrollBehavior = "smooth";
-  scrollContainer.scrollLeft -= 860;
+  scrollContainer.scrollLeft -= 856;
 });
+
+function scrollGallery() {
+  setInterval(() => {
+    scrollContainer.style.scrollBehavior = "smooth";
+    scrollContainer.scrollLeft += 856;
+  }, 2500);
+}
+
+scrollGallery();
 
 // scrollContainer.addEventListener("wheel", (evt) => {
 //   //   evt.preventDefault();

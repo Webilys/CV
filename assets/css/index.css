@@ -294,6 +294,13 @@ a {
 #portfolio {
   margin: 50px auto;
 }
+@media screen and (max-width: 720px) {
+  #portfolio {
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+  }
+}
 #portfolio h2 {
   color: #fff;
   text-shadow: 0 0 10px #000;
@@ -340,17 +347,12 @@ a {
 #portfolio .gallery-wrap .gallery div {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto;
   gap: 20px;
   padding: 10px;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
-}
-@media screen and (max-width: 720px) {
-  #portfolio .gallery-wrap .gallery div {
-    grid-template-columns: 1fr;
-  }
 }
 #portfolio .gallery-wrap .gallery div a {
   width: 100%;
@@ -366,27 +368,40 @@ a {
   transition: transform 0.5s, -webkit-transform 0.5s;
   border-radius: 10px;
 }
+@media screen and (max-width: 720px) {
+  #portfolio .gallery-wrap .gallery div a img {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
+}
 #portfolio .gallery-wrap .gallery div a img:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
   cursor: pointer;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  border-radius: 10px;
 }
 #portfolio .gallery-wrap #backBtn,
 #portfolio .gallery-wrap #nextBtn {
   font-size: 50px;
   cursor: pointer;
   margin: 40px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
   border-radius: 50%;
   background: linear-gradient(45deg, rgba(118, 77, 130, 0.9), rgba(184, 100, 101, 0.9), rgba(238, 170, 70, 0.9));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+@media screen and (max-width: 720px) {
+  #portfolio .gallery-wrap #backBtn,
+  #portfolio .gallery-wrap #nextBtn {
+    display: none;
+  }
 }
 #portfolio .gallery-wrap #backBtn:hover,
 #portfolio .gallery-wrap #nextBtn:hover {
