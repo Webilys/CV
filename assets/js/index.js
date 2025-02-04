@@ -17,7 +17,7 @@ buttonCallFixed.addEventListener("click", () => {
 });
 
 //----------------------Gallery-------------------------------------------
-
+let windowWidth = window.width;
 let portfolioSection = document.getElementById("portfolio");
 let scrollContainer = document.querySelector(".gallery");
 let backBtn = document.getElementById("backBtn");
@@ -34,10 +34,17 @@ backBtn.addEventListener("click", () => {
 });
 
 function scrollGallery() {
-  setInterval(() => {
-    scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft += 856;
-  }, 2500);
+  if (windowWidth > 760) {
+    setInterval(() => {
+      scrollContainer.style.scrollBehavior = "smooth";
+      scrollContainer.scrollLeft += 856;
+    }, 2500);
+  } else {
+    setInterval(() => {
+      scrollContainer.style.scrollBehavior = "smooth";
+      scrollContainer.scrollLeft += 311;
+    }, 2500);
+  }
 }
 
 scrollGallery();
