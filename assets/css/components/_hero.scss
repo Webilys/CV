@@ -1,0 +1,26 @@
+.hero {
+  height: 80vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  div {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    color: $white;
+
+    h1 {
+      padding-bottom: 30px;
+      text-shadow: 0 0 5px $black;
+    }
+
+    p {
+      padding-bottom: 30px;
+      text-shadow: 0 0 5px $black;
+      text-transform: uppercase;
+    }
+  }
+}

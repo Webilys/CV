@@ -1,0 +1,25 @@
+#a-propos {
+  background: $degradeOverlay;
+  padding: 50px;
+  border-radius: 10px;
+  text-shadow: 0 0 5px $black;
+  color: $white;
+
+  @media screen and (max-width: 720px) {
+    padding: 20px;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    text-shadow: 0 0 10px $black;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 40px;
+      margin: 20px 0;
+      border: 1.5px solid $white;
+      box-shadow: 0 0 10px $black;
+    }
+  }
+}

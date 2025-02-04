@@ -4,12 +4,21 @@
   border-radius: 10px;
   padding: 50px;
 
+  @media screen and (max-width: 720px) {
+    padding: 20px;
+  }
+
   h2 {
     color: $white;
     text-shadow: 0 0 10px $black;
     text-transform: uppercase;
     padding-bottom: 10px;
     text-align: center;
+
+    @media screen and (max-width: 720px) {
+      padding-bottom: 0;
+    }
+
     &:after {
       content: "";
       display: block;

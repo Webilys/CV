@@ -1,109 +1,13 @@
-.hero {
-  height: 80vh;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  div {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-    color: $white;
-
-    h1 {
-      padding-bottom: 30px;
-      text-shadow: 0 0 5px $black;
-    }
-
-    p {
-      padding-bottom: 30px;
-      text-shadow: 0 0 5px $black;
-      text-transform: uppercase;
-    }
-  }
-}
-
-#a-propos {
-  background: $degradeOverlay;
-  padding: 50px;
-  border-radius: 10px;
-  text-shadow: 0 0 5px $black;
-  color: $white;
-
-  h2 {
-    text-transform: uppercase;
-    text-shadow: 0 0 10px $black;
-
-    &:after {
-      content: "";
-      display: block;
-      width: 40px;
-      margin: 20px 0;
-      border: 1.5px solid $white;
-      box-shadow: 0 0 10px $black;
-    }
-  }
-}
-
-#competences {
-  margin: 50px auto;
-  text-shadow: 0 0 5px $black;
-
-  h2 {
-    text-transform: uppercase;
-    text-shadow: 0 0 10px $black;
-
-    &:after {
-      content: "";
-      display: block;
-      width: 40px;
-      margin: 20px 0;
-      border: 1.5px solid $white;
-      box-shadow: 0 0 10px $black;
-    }
-  }
-
-  h3 {
-    padding-top: 40px;
-  }
-
-  h2,
-  h3,
-  h5 {
-    color: $white;
-    text-shadow: 0 0 10px $black;
-  }
-
-  .container {
-    h5 {
-      margin: 20px 0;
-    }
-
-    .progress {
-      height: 25px;
-      box-shadow: 0 0 10px $black;
-      font-size: 0.9rem;
-      .progress-bar {
-        height: 25px;
-        background: $degradeOverlay;
-      }
-    }
-  }
-  .competences-techniques {
-    .progress {
-      background: $degradeOverlay2;
-    }
-  }
-}
-
 #formations {
   margin: 50px auto;
   background: $degradeOverlay;
   border-radius: 10px;
   padding: 50px;
   text-align: center;
+
+  @media screen and (max-width: 720px) {
+    padding: 20px;
+  }
 
   h2 {
     color: $white;

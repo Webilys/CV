@@ -7,6 +7,10 @@
     text-transform: uppercase;
     padding-bottom: 30px;
     text-align: center;
+
+    @media screen and (max-width: 720px) {
+      padding-bottom: 0;
+    }
     &:after {
       content: "";
       display: block;
