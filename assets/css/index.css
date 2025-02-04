@@ -20,7 +20,7 @@ body {
 @media screen and (max-width: 720px) {
   body {
     background: url(../img/hero.webp) fixed center/cover;
-    background-position: 50%;
+    background-position: 60%;
   }
 }
 
