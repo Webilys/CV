@@ -404,7 +404,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 760px) {
   #portfolio .gallery-wrap #backBtn,
   #portfolio .gallery-wrap #nextBtn {
     display: none;

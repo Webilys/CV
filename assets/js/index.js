@@ -5,7 +5,7 @@ const btnContact = document.getElementById("button-contact");
 const buttonCallFixed = document.getElementById("button-call-fixed");
 
 btnAboutUs.addEventListener("click", () => {
-  window.location.href = "https://github.com/Webilys";
+  window.open("https://github.com/Webilys", "_blank");
 });
 
 btnContact.addEventListener("click", () => {
@@ -17,7 +17,6 @@ buttonCallFixed.addEventListener("click", () => {
 });
 
 //----------------------Gallery-------------------------------------------
-let windowWidth = window.width;
 let portfolioSection = document.getElementById("portfolio");
 let scrollContainer = document.querySelector(".gallery");
 let backBtn = document.getElementById("backBtn");
@@ -34,18 +33,28 @@ backBtn.addEventListener("click", () => {
 });
 
 function scrollGallery() {
-  if (windowWidth < 760) {
+  if (window.innerWidth < 760) {
     setInterval(() => {
-      scrollContainer.style.scrollBehavior = "smooth";
-      scrollContainer.scrollLeft += 311;
+      if (scrollContainer) {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft += 311;
+      }
     }, 2500);
-  } else {
-    scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft -= 856;
+  } else if (window.innerWidth > 760) {
+    backBtn.style.display = "block";
+    nextBtn.style.display = "block";
+    setInterval(() => {
+      if (scrollContainer) {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft += 856;
+      }
+    }, 2500);
   }
 }
 
-scrollGallery();
+portfolioSection.addEventListener("mouseenter", () => {
+  scrollGallery();
+});
 
 // scrollContainer.addEventListener("wheel", (evt) => {
 //   //   evt.preventDefault();
