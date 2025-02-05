@@ -18,12 +18,16 @@ $degradeOverlay2: linear-gradient(
   rgba(118, 77, 130, 0.9)
 );
 
+$degrade: linear-gradient(45deg, #764d82, #b86465, #eeaa46);
+$degrade2: linear-gradient(45deg, #eeaa46, #b86465, #764d82);
+
 $color1: #eeaa46;
 $color2: #764d82;
 $color3: #d82c2e;
 $color4: #dadada;
 $white: #fff;
 $black: #000;
+$bg: #13161d;
 $whiteShadow: rgba(255, 255, 255, 0.25);
 $blackShadow: rgba(0, 0, 0, 0.25);
 $blackOverlay: rgba(0, 0, 0, 0.9);
@@ -40,15 +44,8 @@ $whiteOverlay: rgba(255, 255, 255, 0.9);
 }
 
 body {
-  background: url(../img/hero.webp) center/contain;
-  background-attachment: fixed;
   width: 100%;
-  height: 100vh;
-
-  @media screen and (max-width: 576px) {
-    background: url(../img/hero-mobile.png) center/375px;
-    // background-size: 375px;
-  }
+  background: $bg !important;
 }
 
 a {

@@ -12,31 +12,29 @@
 }
 
 body {
-  background: url(../img/hero.webp) center/contain;
-  background-attachment: fixed;
   width: 100%;
-  height: 100vh;
-}
-@media screen and (max-width: 576px) {
-  body {
-    background: url(../img/hero-mobile.png) center/375px;
-  }
+  background: #13161d !important;
 }
 
 a {
   text-decoration: none;
 }
 
+.container-hero-bg {
+  background: url(../img/hero.webp) center/cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
 .buttonDegrade {
-  background: linear-gradient(45deg, rgba(118, 77, 130, 0.9), rgba(184, 100, 101, 0.9), rgba(238, 170, 70, 0.9));
+  background: linear-gradient(45deg, #764d82, #b86465, #eeaa46);
   border: 0;
   padding: 10px 30px;
   border-radius: 360px;
   color: #fff;
-  -webkit-box-shadow: 0 0 5px #000;
-          box-shadow: 0 0 5px #000;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,11 +45,13 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 .buttonDegrade:hover {
-  background: linear-gradient(45deg, rgba(238, 170, 70, 0.9), rgba(184, 100, 101, 0.9), rgba(118, 77, 130, 0.9));
-  -webkit-box-shadow: 0 0 10px #000;
-          box-shadow: 0 0 10px #000;
+  background: linear-gradient(45deg, #eeaa46, #b86465, #764d82);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .hero {
@@ -95,11 +95,12 @@ a {
 }
 
 #a-propos {
-  background: linear-gradient(45deg, rgba(118, 77, 130, 0.9), rgba(184, 100, 101, 0.9), rgba(238, 170, 70, 0.9));
+  background: linear-gradient(45deg, #764d82, #b86465, #eeaa46);
   padding: 50px;
   border-radius: 10px;
   text-shadow: 0 0 5px #000;
   color: #fff;
+  margin: 50px auto;
 }
 @media screen and (max-width: 576px) {
   #a-propos {
@@ -126,7 +127,6 @@ a {
 }
 @media screen and (max-width: 992px) {
   #competences {
-    background: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
     padding: 20px;
   }
@@ -153,21 +153,21 @@ a {
   color: #fff;
   text-shadow: 0 0 10px #000;
 }
-#competences .container h5 {
+#competences .competences-container h5 {
   margin: 20px 0;
 }
-#competences .container .progress {
+#competences .competences-container .progress {
   height: 25px;
   -webkit-box-shadow: 0 0 10px #000;
           box-shadow: 0 0 10px #000;
   font-size: 0.9rem;
 }
-#competences .container .progress .progress-bar {
+#competences .competences-container .progress .progress-bar {
   height: 25px;
-  background: linear-gradient(45deg, rgba(118, 77, 130, 0.9), rgba(184, 100, 101, 0.9), rgba(238, 170, 70, 0.9));
+  background: linear-gradient(45deg, #764d82, #b86465, #eeaa46);
 }
 #competences .competences-techniques .progress {
-  background: linear-gradient(45deg, rgba(238, 170, 70, 0.9), rgba(184, 100, 101, 0.9), rgba(118, 77, 130, 0.9));
+  background: linear-gradient(45deg, #eeaa46, #b86465, #764d82);
 }
 
 #formations {
@@ -303,7 +303,6 @@ a {
 }
 @media screen and (max-width: 992px) {
   #portfolio {
-    background: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
     padding: 20px;
   }
@@ -514,9 +513,9 @@ a {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: linear-gradient(45deg, rgba(118, 77, 130, 0.9), rgba(184, 100, 101, 0.9), rgba(238, 170, 70, 0.9));
+  background: linear-gradient(45deg, #764d82, #b86465, #eeaa46);
   color: #fff;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   font-size: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,11 +529,15 @@ a {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
 #button-call-fixed:hover {
-  background: linear-gradient(45deg, rgba(238, 170, 70, 0.9), rgba(184, 100, 101, 0.9), rgba(118, 77, 130, 0.9));
+  background: linear-gradient(45deg, #eeaa46, #b86465, #764d82);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 #button-call-fixed i {
   cursor: pointer;
@@ -547,10 +550,19 @@ header .logo {
   width: 100px;
   height: 100px;
   border-radius: 360px;
-  background: linear-gradient(45deg, rgba(118, 77, 130, 0.9), rgba(184, 100, 101, 0.9), rgba(238, 170, 70, 0.9));
-  -webkit-box-shadow: 0 0 10px #000;
-          box-shadow: 0 0 10px #000;
+  background: linear-gradient(45deg, #764d82, #b86465, #eeaa46);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+header .logo:hover {
+  background: linear-gradient(45deg, #eeaa46, #b86465, #764d82);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 header .logo img {
   padding: 10px;

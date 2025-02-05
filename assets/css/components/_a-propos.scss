@@ -1,9 +1,10 @@
 #a-propos {
-  background: $degradeOverlay;
+  background: $degrade;
   padding: 50px;
   border-radius: 10px;
   text-shadow: 0 0 5px $black;
   color: $white;
+  margin: 50px auto;
 
   @media screen and (max-width: 576px) {
     padding: 20px;
