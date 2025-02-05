@@ -23,37 +23,23 @@ let backBtn = document.getElementById("backBtn");
 let nextBtn = document.getElementById("nextBtn");
 
 nextBtn.addEventListener("click", () => {
-  scrollContainer.style.scrollBehavior = "smooth";
-  scrollContainer.scrollLeft += 856;
+  if (window.innerWidth < 760) {
+    scrollContainer.style.scrollBehavior = "smooth";
+    scrollContainer.scrollLeft += 311;
+  } else {
+    scrollContainer.style.scrollBehavior = "smooth";
+    scrollContainer.scrollLeft += 856;
+  }
 });
 
 backBtn.addEventListener("click", () => {
-  scrollContainer.style.scrollBehavior = "smooth";
-  scrollContainer.scrollLeft -= 856;
-});
-
-function scrollGallery() {
   if (window.innerWidth < 760) {
-    setInterval(() => {
-      if (scrollContainer) {
-        scrollContainer.style.scrollBehavior = "smooth";
-        scrollContainer.scrollLeft += 311;
-      }
-    }, 2500);
-  } else if (window.innerWidth > 760) {
-    backBtn.style.display = "block";
-    nextBtn.style.display = "block";
-    setInterval(() => {
-      if (scrollContainer) {
-        scrollContainer.style.scrollBehavior = "smooth";
-        scrollContainer.scrollLeft += 856;
-      }
-    }, 2500);
+    scrollContainer.style.scrollBehavior = "smooth";
+    scrollContainer.scrollLeft -= 311;
+  } else {
+    scrollContainer.style.scrollBehavior = "smooth";
+    scrollContainer.scrollLeft -= 856;
   }
-}
-
-portfolioSection.addEventListener("mouseenter", () => {
-  scrollGallery();
 });
 
 // scrollContainer.addEventListener("wheel", (evt) => {

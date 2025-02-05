@@ -166,8 +166,8 @@ a {
   height: 25px;
   background: linear-gradient(45deg, #764d82, #b86465, #eeaa46);
 }
-#competences .competences-techniques .progress {
-  background: linear-gradient(45deg, #eeaa46, #b86465, #764d82);
+#competences .competences-techniques .progress-bar {
+  background: linear-gradient(45deg, #eeaa46, #b86465, #764d82) !important;
 }
 
 #formations {
@@ -346,6 +346,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   overflow: scroll;
+  border-radius: 10px;
 }
 #portfolio .gallery-wrap .gallery::-webkit-scrollbar {
   display: none;
@@ -359,6 +360,7 @@ a {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
+  border-radius: 10px;
 }
 #portfolio .gallery-wrap .gallery div a {
   width: 100%;
@@ -386,7 +388,6 @@ a {
   cursor: pointer;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  border-radius: 10px;
 }
 #portfolio .gallery-wrap #backBtn,
 #portfolio .gallery-wrap #nextBtn {
@@ -406,13 +407,14 @@ a {
 @media screen and (max-width: 760px) {
   #portfolio .gallery-wrap #backBtn,
   #portfolio .gallery-wrap #nextBtn {
-    display: none;
+    margin: 10px;
   }
 }
 #portfolio .gallery-wrap #backBtn:hover,
 #portfolio .gallery-wrap #nextBtn:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  font-size: 30px;
 }
 
 #contact {

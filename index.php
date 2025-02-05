@@ -73,66 +73,70 @@
         </div>
       </div>
 
-      <div class="competences-container competences-techniques">
-        <h3>Compétences techniques</h3>
-        <div class="row justify-content-center">
-          <div class="col-md-6 skill-card">
-            <i class="fab fa-html5 text-warning fs-3"></i>
-            <br />
-            <div class="progress" role="progressbar" aria-label="Frontend" aria-valuenow="10" aria-valuemin="0"
-              aria-valuemax="100">
-              <div class="progress-bar overflow-visible text-light" style="width: 100%">
-                Intégration et développement web
+      <div class="competences-container">
+        <div class="competences-techniques">
+
+
+          <h3>Compétences techniques</h3>
+          <div class="row justify-content-center">
+            <div class="col-md-6 skill-card">
+              <i class="fab fa-html5 text-warning fs-3"></i>
+              <br />
+              <div class="progress" role="progressbar" aria-label="Frontend" aria-valuenow="10" aria-valuemin="0"
+                aria-valuemax="100">
+                <div class="progress-bar overflow-visible text-light" style="width: 100%">
+                  Intégration et développement web
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 skill-card">
-            <i class="fab fa-css3-alt text-primary fs-3"></i>
-            <br />
-            <div class="progress" role="progressbar" aria-label="Backend" aria-valuenow="10" aria-valuemin="0"
-              aria-valuemax="100">
-              <div class="progress-bar overflow-visible text-light" style="width: 100%">
-                Développement backend et gestion de bases de données
+            <div class="col-md-6 skill-card">
+              <i class="fab fa-css3-alt text-primary fs-3"></i>
+              <br />
+              <div class="progress" role="progressbar" aria-label="Backend" aria-valuenow="10" aria-valuemin="0"
+                aria-valuemax="100">
+                <div class="progress-bar overflow-visible text-light" style="width: 100%">
+                  Développement backend et gestion de bases de données
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 skill-card">
-            <i class="fab fa-js text-warning fs-3"></i>
-            <br />
-            <div class="progress" role="progressbar" aria-label="Backend" aria-valuenow="10" aria-valuemin="0"
-              aria-valuemax="100">
-              <div class="progress-bar overflow-visible text-light" style="width: 100%">
-                Création et personnalisation de sites WordPress
+            <div class="col-md-6 skill-card">
+              <i class="fab fa-js text-warning fs-3"></i>
+              <br />
+              <div class="progress" role="progressbar" aria-label="Backend" aria-valuenow="10" aria-valuemin="0"
+                aria-valuemax="100">
+                <div class="progress-bar overflow-visible text-light" style="width: 100%">
+                  Création et personnalisation de sites WordPress
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 skill-card">
-            <i class="fab fa-react text-info fs-3"></i>
-            <br />
-            <div class="progress" role="progressbar" aria-label="Backend" aria-valuenow="10" aria-valuemin="0"
-              aria-valuemax="100">
-              <div class="progress-bar overflow-visible text-light" style="width: 100%">
-                Développement d’applications web dynamiques
+            <div class="col-md-6 skill-card">
+              <i class="fab fa-react text-info fs-3"></i>
+              <br />
+              <div class="progress" role="progressbar" aria-label="Backend" aria-valuenow="10" aria-valuemin="0"
+                aria-valuemax="100">
+                <div class="progress-bar overflow-visible text-light" style="width: 100%">
+                  Développement d’applications web dynamiques
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 skill-card">
-            <i class="fab fa-react text-info fs-3"></i>
-            <br />
-            <div class="progress" role="progressbar" aria-label="Backend" aria-valuenow="10" aria-valuemin="0"
-              aria-valuemax="100">
-              <div class="progress-bar overflow-visible text-light" style="width: 100%">
-                Optimisation SEO & performances web
+            <div class="col-md-6 skill-card">
+              <i class="fab fa-react text-info fs-3"></i>
+              <br />
+              <div class="progress" role="progressbar" aria-label="Backend" aria-valuenow="10" aria-valuemin="0"
+                aria-valuemax="100">
+                <div class="progress-bar overflow-visible text-light" style="width: 100%">
+                  Optimisation SEO & performances web
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 skill-card">
-            <i class="fab fa-react text-info fs-3"></i>
-            <br />
-            <div class="progress" role="progressbar" aria-label="Backend" aria-valuenow="10" aria-valuemin="0"
-              aria-valuemax="100">
-              <div class="progress-bar overflow-visible text-light" style="width: 100%">
-                Gestion d’hébergement, DNS et sécurité web
+            <div class="col-md-6 skill-card">
+              <i class="fab fa-react text-info fs-3"></i>
+              <br />
+              <div class="progress" role="progressbar" aria-label="Backend" aria-valuenow="10" aria-valuemin="0"
+                aria-valuemax="100">
+                <div class="progress-bar overflow-visible text-light" style="width: 100%">
+                  Gestion d’hébergement, DNS et sécurité web
+                </div>
               </div>
             </div>
           </div>
