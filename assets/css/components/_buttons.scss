@@ -6,12 +6,12 @@
   color: $white;
   box-shadow: 0 0 5px $blackShadow;
   text-shadow: 0 0 5px $blackShadow;
-
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   transition: 0.2s ease;
+
   &:hover {
     background: $degrade2;
     box-shadow: 0 0 10px $blackShadow;

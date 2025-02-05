@@ -3,10 +3,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   font-family: "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   cursor: default;
 }
@@ -55,7 +51,7 @@ a {
 }
 
 .hero {
-  height: 80vh;
+  height: 73vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,12 +82,13 @@ a {
 }
 .hero div h1 {
   padding-bottom: 30px;
-  text-shadow: 0 0 5px #000;
+  text-shadow: 0 0 10px #000;
 }
 .hero div p {
   padding-bottom: 30px;
-  text-shadow: 0 0 5px #000;
+  text-shadow: 0 0 10px #000;
   text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 #a-propos {
@@ -546,7 +543,7 @@ a {
 }
 
 header {
-  padding: 20px 0;
+  padding: 20px 0 0;
 }
 header .logo {
   width: 100px;

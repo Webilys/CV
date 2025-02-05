@@ -1,9 +1,10 @@
 .hero {
-  height: 80vh;
+  height: 73vh;
   display: flex;
   justify-content: start;
   align-items: center;
   div {
+    // background: red;
     height: 100%;
     width: 50%;
     display: flex;
@@ -14,13 +15,14 @@
 
     h1 {
       padding-bottom: 30px;
-      text-shadow: 0 0 5px $black;
+      text-shadow: 0 0 10px $black;
     }
 
     p {
       padding-bottom: 30px;
-      text-shadow: 0 0 5px $black;
+      text-shadow: 0 0 10px $black;
       text-transform: uppercase;
+      font-size: 1.2rem;
     }
   }
 }
