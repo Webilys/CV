@@ -1,19 +1,17 @@
 .buttonDegrade {
-  background: $degrade;
-  border: 0;
   padding: 10px 30px;
-  border-radius: 360px;
-  color: $white;
-  box-shadow: 0 0 5px $blackShadow;
-  text-shadow: 0 0 5px $blackShadow;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   transition: 0.2s ease;
+  filter: drop-shadow(0 0 5px $black);
+  @include borderGradient;
+  @include textGradient;
 
   &:hover {
-    background: $degrade2;
-    box-shadow: 0 0 10px $blackShadow;
+    transform: scale(1.05);
+    @include borderGradient2;
+    @include textGradient2;
   }
 }

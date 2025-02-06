@@ -51,3 +51,33 @@ body {
 a {
   text-decoration: none;
 }
+
+@mixin borderGradient {
+  // background: none !important;
+  border-width: 2px;
+  border-style: solid;
+  border-image: $degrade 1;
+  border-radius: 10px !important;
+}
+
+@mixin borderGradient2 {
+  // background: none !important;
+  border-width: 2px;
+  border-style: solid;
+  border-image: $degrade2 1;
+  border-radius: 10px !important;
+}
+
+@mixin textGradient {
+  background: $degrade;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin textGradient2 {
+  background: $degrade2;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

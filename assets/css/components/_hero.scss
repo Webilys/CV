@@ -15,7 +15,8 @@
 
     h1 {
       padding-bottom: 30px;
-      text-shadow: 0 0 10px $black;
+      filter: drop-shadow(0 0 5px $bg);
+      @include textGradient;
     }
 
     p {
