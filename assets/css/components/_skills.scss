@@ -1,0 +1,71 @@
+#competences {
+  margin: 50px auto;
+
+  h2,
+  h3 {
+    width: auto;
+    text-transform: uppercase;
+    @include textGradient;
+  }
+
+  h2 {
+    text-align: center !important;
+    margin: 0 auto 50px;
+  }
+
+  h3 {
+    &:after {
+      @include afterBorderGradient;
+    }
+  }
+
+  .row {
+    margin-right: -22px;
+    margin-left: -22px;
+  }
+
+  .card {
+    position: relative;
+    color: $white;
+    height: 100%;
+    background: none !important;
+    @include borderGradient;
+
+    .card-body {
+      background: transparent !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .progress {
+      box-shadow: 0 0 5px $blackShadow;
+      font-size: 0.9rem;
+      height: 20px;
+
+      .progress-bar-stripped {
+        height: 20px;
+        // background: none;
+        background-image: linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0.15) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.15) 50%,
+          rgba(255, 255, 255, 0.15) 75%,
+          transparent 75%,
+          transparent
+        );
+      }
+      .progress-bar {
+        height: 20px;
+        // background: $color1;
+        background-image: $degrade !important;
+        background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: 20%;
+      }
+    }
+  }
+}

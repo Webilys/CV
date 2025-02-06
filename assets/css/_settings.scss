@@ -1,26 +1,16 @@
 //fonts
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
 
-$font1: "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+$font1: "poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
   "Lucida Sans", Arial, sans-serif;
 
 //colors
 
-$degradeOverlay: linear-gradient(
-  45deg,
-  rgba(118, 77, 130, 0.9),
-  rgba(184, 100, 101, 0.9),
-  rgba(238, 170, 70, 0.9)
-);
-$degradeOverlay2: linear-gradient(
-  45deg,
-  rgba(238, 170, 70, 0.9),
-  rgba(184, 100, 101, 0.9),
-  rgba(118, 77, 130, 0.9)
-);
-
 $degrade: linear-gradient(45deg, #764d82, #b86465, #eeaa46);
 $degrade2: linear-gradient(45deg, #eeaa46, #b86465, #764d82);
-
 $color1: #eeaa46;
 $color2: #764d82;
 $color3: #d82c2e;
@@ -52,16 +42,22 @@ a {
   text-decoration: none;
 }
 
+@mixin afterBorderGradient {
+  content: "";
+  display: block;
+  width: 40px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px $black;
+  @include borderGradient;
+}
+
 @mixin borderGradient {
-  // background: none !important;
   border-width: 2px;
   border-style: solid;
   border-image: $degrade 1;
-  border-radius: 10px !important;
 }
 
 @mixin borderGradient2 {
-  // background: none !important;
   border-width: 2px;
   border-style: solid;
   border-image: $degrade2 1;
@@ -69,6 +65,7 @@ a {
 }
 
 @mixin textGradient {
+  display: inline-block;
   background: $degrade;
   background-clip: text;
   -webkit-background-clip: text;

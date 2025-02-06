@@ -1,6 +1,6 @@
 #formations {
   margin: 50px auto;
-  background: $degradeOverlay;
+  background: $degrade;
   border-radius: 10px;
   padding: 50px;
   text-align: center;
@@ -57,7 +57,7 @@
         left: 50%;
         width: 60px;
         height: 60px;
-        background: $degradeOverlay;
+        background: $degrade;
         box-shadow: 0 0 10px $blackShadow;
         text-shadow: 0 0 5px $blackShadow;
         border-radius: 50%;

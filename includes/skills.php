@@ -1,90 +1,120 @@
 <?php
-
-echo '<section id="competences" class="bsb-skill-2">
-<h2>Skills</h2>
-<div class="container">
-  <div class="row">
-    <div class="col-12 col-md-10 col-lg-8">
+echo '
+  <section id="competences" class="bsb-skill-2">
+    <h2>Skills</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-10 col-lg-8">
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<div class="container overflow-hidden">
-  <div class="row gy-3 gy-lg-4">
-    <div class="col-12 col-lg-6">
-      <div class="card">
-        <div class="card-body p-4 p-xxl-5">
-          <div class="row align-items-center">
-            <div class="col-12 col-md-7 skill-title">
-              <h3 class="fw-bold mb-2">Frontend</h3>
-            <ul>
-            <li>
-            Langages & Préprocesseurs : HTML, CSS, Sass
-           </li>
-           <li> Frameworks & Bibliothèques : JavaScript, TypeScript, React, jQuery, Bootstrap
-          </li><li> Outils & Build Tools : Webpack, Vite, ESLint, Prettier</li>
-            </ul>
+    <div class="container overflow-hidden">
+      <div class="row gy-3 gy-lg-4">
+        <div class="col-12 col-lg-6">
+          <div class="card">
+            <div class="card-body p-4 p-xxl-5">
+              <div class="row align-items-center">
+                <div class="col-12 skill-title">
+                  <h3 class="fw-bold mb-2">Frontend</h3>
+                  <ul>
+                    <li>
+                      Langages & Préprocesseurs : HTML, CSS, Sass
+                    </li>
+                    <li> Frameworks & Bibliothèques : JavaScript, TypeScript, React, jQuery, Bootstrap
+                    </li>
+                    <li> Outils & Build Tools : Webpack, Vite, ESLint, Prettier</li>
+                  </ul>
+                </div>
+                <div class="col-12 skill-progress">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                      aria-valuemin="0" aria-valuemax="100">100%</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-12 col-md-5 skill-progress">
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-width-1" role="progressbar" aria-label="Bootstrap" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="card">
+            <div class="card-body p-4 p-xxl-5">
+              <div class="row align-items-center">
+                <div class="col-12 skill-title">
+                  <h3 class="fw-bold mb-2">Backend</h3>
+                  <ul>
+                    <li>Langages & Environnements : PHP</li>
+                    <li>Frameworks : Symfony</li>
+                    <li>Bases de données : MySQL, MariaDB
+                    </li>
+                    <li>API & Protocoles : REST API
+                    </li>
+                    <li>Outils DevOps & Serveurs : Netlify</li>
+                  </ul>
+                </div>
+                <div class="col-12 skill-progress">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                      aria-valuemin="0" aria-valuemax="100">100%
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="card">
+            <div class="card-body p-4 p-xxl-5">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-7 skill-title">
+                  <h3 class="fw-bold mb-2">CMS & E-commerce</h3>
+                  <ul>
+                    <li>WordPress</li>
+                    <li>WooCommerce</li>
+                    <li>Prestashop</li>
+                    <li>Shopify</li>
+                    <li>Wix</li>
+                    <li>Weebly</li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-5 skill-progress">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-width-1" role="progressbar" aria-label="Bootstrap"
+                      aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="card">
+            <div class="card-body p-4 p-xxl-5">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-7 skill-title">
+                  <h3 class="fw-bold mb-2">Outils & autres</h3>
+                  <ul>
+                    <li>Gestion de versions : Git, GitHub, GitLab</li>
+                    <li>Cloud & Hébergement : Google Cloud, Ionos 1&1, OVH</li>
+                    <li>Collaboration : Trello</li>
+                    <li>Outils de développement : Google Suite, VS Code</li>
+                    <li>SEO : Lighthouse, Google Search Console, PageSpeed Insights</li>
+                    <li>Création & Génération de Contenu : Canva, Adobe Suite, Figma, ChatGPT, Ideogram, Midjourney
+                    </li>
+                    <li>Automatisation & Productivité : Zapier</li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-5 skill-progress">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-width-1" role="progressbar" aria-label="Bootstrap"
+                      aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-12 col-lg-6">
-      <div class="card">
-        <div class="card-body p-4 p-xxl-5">
-          <div class="row align-items-center">
-            <div class="col-12 col-md-7 skill-title">
-              <h3 class="fw-bold mb-2">React</h3>
-              <p class="text-secondary fst-italic mb-4 mb-md-0">React is a JavaScript library for building user interfaces. It is known for its speed, performance, and scalability.</p>
-            </div>
-            <div class="col-12 col-md-5 skill-progress">
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-width-2" role="progressbar" aria-label="React" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-lg-6">
-      <div class="card">
-        <div class="card-body p-4 p-xxl-5">
-          <div class="row align-items-center">
-            <div class="col-12 col-md-7 skill-title">
-              <h3 class="fw-bold mb-2">Vue</h3>
-              <p class="text-secondary fst-italic mb-4 mb-md-0">Vue is a progressive JavaScript framework for building user interfaces. It is known for its simplicity and flexibility.</p>
-            </div>
-            <div class="col-12 col-md-5 skill-progress">
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-width-3" role="progressbar" aria-label="Vue" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-lg-6">
-      <div class="card">
-        <div class="card-body p-4 p-xxl-5">
-          <div class="row align-items-center">
-            <div class="col-12 col-md-7 skill-title">
-              <h3 class="fw-bold mb-2">WordPress</h3>
-              <p class="text-secondary fst-italic mb-4 mb-md-0">WordPress is a content management system (CMS) that is used to create and manage websites.</p>
-            </div>
-            <div class="col-12 col-md-5 skill-progress">
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-width-4" role="progressbar" aria-label="WordPress" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>';
-?>
+  </section>
+'; ?>

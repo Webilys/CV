@@ -1,6 +1,10 @@
 header {
   padding-top: 20px;
 
+  .container-fluid {
+    padding: 0;
+  }
+
   .logo {
     width: 100px;
     height: 100px;
@@ -9,14 +13,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    // border-radius: 360px;
-    // background: $degrade;
-    // box-shadow: 0 0 5px $blackShadow;
     @include borderGradient;
+    filter: drop-shadow(0 0 5px $black);
 
     &:hover {
-      background: $degrade2;
-      box-shadow: 0 0 10px $blackShadow;
+      @include borderGradient2;
+
       transform: scale(1.05);
     }
 
@@ -26,6 +28,14 @@ header {
       width: 100px;
       filter: drop-shadow(0 0 5px $black);
       cursor: pointer;
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        filter: drop-shadow(0 0 5px $black);
+      }
     }
   }
 }
