@@ -30,41 +30,37 @@
     height: 100%;
     background: none !important;
     @include borderGradient;
+    // padding: 20px; /* Uniform padding for all cards */
 
     .card-body {
       background: transparent !important;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: stretch;
       justify-content: space-between;
+      height: 100%;
+      // padding: 20px; /* Ensuring same padding inside the card body */
+    }
+
+    .skill-title {
+      flex-grow: 1;
+    }
+
+    .skill-progress {
+      align-self: flex-end;
+      width: 100%;
     }
 
     .progress {
       box-shadow: 0 0 5px $blackShadow;
       font-size: 0.9rem;
       height: 20px;
+      margin-top: auto; /* Ensure progress bar is at the bottom */
 
-      .progress-bar-stripped {
-        height: 20px;
-        // background: none;
-        background-image: linear-gradient(
-          45deg,
-          rgba(255, 255, 255, 0.15) 25%,
-          transparent 25%,
-          transparent 50%,
-          rgba(255, 255, 255, 0.15) 50%,
-          rgba(255, 255, 255, 0.15) 75%,
-          transparent 75%,
-          transparent
-        );
-      }
       .progress-bar {
         height: 20px;
-        // background: $color1;
         background-image: $degrade !important;
         background-position: center;
-        // background-repeat: no-repeat;
-        // background-size: 20%;
       }
     }
   }
