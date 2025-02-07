@@ -1,27 +1,24 @@
 #formations {
   margin: 50px auto;
-  background: $degrade;
+  background: none !important;
   border-radius: 10px;
   padding: 50px;
   text-align: center;
-  transform: scale(0);
+  opacity: 0;
+
+  // @include borderGradient;
 
   @media screen and (max-width: 576px) {
     padding: 20px;
   }
 
   h2 {
-    color: $white;
-    text-shadow: 0 0 10px $black;
     text-transform: uppercase;
     padding-bottom: 30px;
+    @include textGradient;
+
     &:after {
-      content: "";
-      display: block;
-      width: 40px;
-      margin: 20px auto;
-      border: 1.5px solid $white;
-      box-shadow: 0 0 10px $black;
+      @include afterBorderGradientCenter;
     }
   }
   .timeline {
@@ -31,8 +28,8 @@
     &::after {
       content: "";
       position: absolute;
-      width: 4px;
-      background: $white;
+      width: 2px;
+      background: $degrade2;
       top: 0;
       bottom: 0;
       left: 50%;
@@ -59,10 +56,6 @@
         width: 60px;
         height: 60px;
         background: $degrade;
-        box-shadow: 0 0 10px $blackShadow;
-        text-shadow: 0 0 5px $blackShadow;
-        border-radius: 50%;
-        border: 2px solid $white;
         color: $white;
         padding: 10px;
         font-weight: bold;
@@ -70,6 +63,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include borderGradient;
       }
 
       .timeline-content {
@@ -77,25 +71,22 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background: $whiteShadow;
-        box-shadow: 0 0 10px $blackShadow;
-        text-shadow: 0 0 5px $blackShadow;
         padding: 40px 30px 10px;
         border-radius: 10px;
         color: $white;
         text-align: center;
         font-size: 1rem;
 
+        @include borderGradient;
+
         h5 {
+          @include textGradient;
+
           @media screen and (max-width: 576px) {
             font-size: small;
           }
           &:after {
-            content: "";
-            display: block;
-            width: 40px;
-            margin: 20px auto 10px;
-            border: 1.5px solid $white;
+            @include afterBorderGradientCenter;
           }
         }
 

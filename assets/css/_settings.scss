@@ -158,12 +158,14 @@ a {
 
 @keyframes animationEnterSectionFormations {
   0% {
-    transform: scale(0);
+    transform: translateX(1500px);
   }
   50% {
-    transform: scale(0.5);
+    transform: translateX(750px);
+    opacity: 0.5;
   }
   100% {
-    transform: scale(1);
+    transform: translateX(0);
+    opacity: 1;
   }
 }

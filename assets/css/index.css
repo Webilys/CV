@@ -167,30 +167,34 @@ a {
 }
 @-webkit-keyframes animationEnterSectionFormations {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    -webkit-transform: translateX(1500px);
+            transform: translateX(1500px);
   }
   50% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: translateX(750px);
+            transform: translateX(750px);
+    opacity: 0.5;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
   }
 }
 @keyframes animationEnterSectionFormations {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    -webkit-transform: translateX(1500px);
+            transform: translateX(1500px);
   }
   50% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: translateX(750px);
+            transform: translateX(750px);
+    opacity: 0.5;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
   }
 }
 .container-hero-bg {
@@ -425,12 +429,11 @@ a {
 
 #formations {
   margin: 50px auto;
-  background: linear-gradient(45deg, #764d82, #b86465, #eeaa46);
+  background: none !important;
   border-radius: 10px;
   padding: 50px;
   text-align: center;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  opacity: 0;
 }
 @media screen and (max-width: 576px) {
   #formations {
@@ -438,19 +441,25 @@ a {
   }
 }
 #formations h2 {
-  color: #fff;
-  text-shadow: 0 0 10px #000;
   text-transform: uppercase;
   padding-bottom: 30px;
+  display: inline-block;
+  background: linear-gradient(45deg, #764d82, #b86465, #eeaa46);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #formations h2:after {
   content: "";
   display: block;
   width: 40px;
   margin: 20px auto;
-  border: 1.5px solid #fff;
   -webkit-box-shadow: 0 0 10px #000;
           box-shadow: 0 0 10px #000;
+  border-width: 2px;
+  border-style: solid;
+  -o-border-image: linear-gradient(45deg, #764d82, #b86465, #eeaa46) 1;
+     border-image: linear-gradient(45deg, #764d82, #b86465, #eeaa46) 1;
 }
 #formations .timeline {
   position: relative;
@@ -460,8 +469,8 @@ a {
 #formations .timeline::after {
   content: "";
   position: absolute;
-  width: 4px;
-  background: #fff;
+  width: 2px;
+  background: linear-gradient(45deg, #eeaa46, #b86465, #764d82);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -491,11 +500,6 @@ a {
   width: 60px;
   height: 60px;
   background: linear-gradient(45deg, #764d82, #b86465, #eeaa46);
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  border-radius: 50%;
-  border: 2px solid #fff;
   color: #fff;
   padding: 10px;
   font-weight: bold;
@@ -510,6 +514,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-width: 2px;
+  border-style: solid;
+  -o-border-image: linear-gradient(45deg, #764d82, #b86465, #eeaa46) 1;
+     border-image: linear-gradient(45deg, #764d82, #b86465, #eeaa46) 1;
 }
 #formations .timeline .timeline-item .timeline-content {
   display: -webkit-box;
@@ -525,15 +533,22 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: rgba(255, 255, 255, 0.25);
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   padding: 40px 30px 10px;
   border-radius: 10px;
   color: #fff;
   text-align: center;
   font-size: 1rem;
+  border-width: 2px;
+  border-style: solid;
+  -o-border-image: linear-gradient(45deg, #764d82, #b86465, #eeaa46) 1;
+     border-image: linear-gradient(45deg, #764d82, #b86465, #eeaa46) 1;
+}
+#formations .timeline .timeline-item .timeline-content h5 {
+  display: inline-block;
+  background: linear-gradient(45deg, #764d82, #b86465, #eeaa46);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media screen and (max-width: 576px) {
   #formations .timeline .timeline-item .timeline-content h5 {
@@ -544,8 +559,13 @@ a {
   content: "";
   display: block;
   width: 40px;
-  margin: 20px auto 10px;
-  border: 1.5px solid #fff;
+  margin: 20px auto;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+  border-width: 2px;
+  border-style: solid;
+  -o-border-image: linear-gradient(45deg, #764d82, #b86465, #eeaa46) 1;
+     border-image: linear-gradient(45deg, #764d82, #b86465, #eeaa46) 1;
 }
 @media screen and (max-width: 576px) {
   #formations .timeline .timeline-item .timeline-content p {
