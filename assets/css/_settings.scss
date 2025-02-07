@@ -51,6 +51,15 @@ a {
   @include borderGradient;
 }
 
+@mixin afterBorderGradientCenter {
+  content: "";
+  display: block;
+  width: 40px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px $black;
+  @include borderGradient;
+}
+
 @mixin borderGradient {
   border-width: 2px;
   border-style: solid;
@@ -77,4 +86,84 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@keyframes animationEnterHero {
+  0% {
+    transform: translateX(-600px);
+  }
+
+  50% {
+    transform: translateX(-300px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes animationEnterHeader {
+  0% {
+    transform: translateY(-200px);
+  }
+
+  50% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes animationEnterButtonCall {
+  0% {
+    transform: translateX(100px);
+  }
+
+  50% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes animationEnterSectionApropos {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animationEnterSectionSkills {
+  0% {
+    transform: translateX(-1500px);
+  }
+  50% {
+    transform: translateX(-750px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animationEnterSectionFormations {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

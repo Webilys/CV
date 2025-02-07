@@ -1,5 +1,8 @@
 header {
   padding-top: 20px;
+  transition: animation 0.2s ease;
+  transform: translateY(-200px);
+  animation: animationEnterHeader 1s linear forwards;
 
   .container-fluid {
     padding: 0;

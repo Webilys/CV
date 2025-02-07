@@ -1,6 +1,6 @@
 <?php
 echo '
-<section id="competences" class="bsb-skill-2">
+<section id="skills" class="bsb-skill-2">
   <h2>Skills</h2>
   <div class="container overflow-hidden">
     <div class="row gy-3 gy-lg-4">
@@ -24,8 +24,8 @@ echo '
           <div class="card-body p-4 p-xxl-5">
             <h3 class="fw-bold mb-2">Backend</h3>
             <ul>
-              <li>Langages & Environnements : PHP</li>
-              <li>Frameworks : Symfony</li>
+              <li>Langage : PHP</li>
+              <li>Framework : Symfony</li>
               <li>Bases de données : MySQL, MariaDB</li>
               <li>API & Protocoles : REST API</li>
               <li>Outils DevOps & Serveurs : Netlify</li>
@@ -36,6 +36,22 @@ echo '
           </div>
         </div>
       </div>
+      <div class="col-12">
+      <div class="card">
+        <div class="card-body p-4 p-xxl-5">
+          <h3 class="fw-bold mb-2">Outils</h3>
+          <ul>
+            <li>Versionning : Git, GitHub, GitLab</li>
+            <li>Cloud & Hébergement : Google Cloud, Ionos 1&1, OVH</li>
+            <li>Outils de développement : Google Suite, VS Code</li>
+            <li>SEO : Lighthouse, Google Search Console, PageSpeed Insights</li>
+          </ul>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+          </div>
+        </div>
+      </div>
+    </div>
       <div class="col-12 col-lg-6">
         <div class="card">
           <div class="card-body p-4 p-xxl-5">
@@ -49,7 +65,7 @@ echo '
               <li>Weebly</li>
             </ul>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+              <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
             </div>
           </div>
         </div>
@@ -59,13 +75,11 @@ echo '
           <div class="card-body p-4 p-xxl-5">
             <h3 class="fw-bold mb-2">Outils & autres</h3>
             <ul>
-              <li>Gestion de versions : Git, GitHub, GitLab</li>
-              <li>Cloud & Hébergement : Google Cloud, Ionos 1&1, OVH</li>
-              <li>Collaboration : Trello</li>
-              <li>Outils de développement : Google Suite, VS Code</li>
-              <li>SEO : Lighthouse, Google Search Console, PageSpeed Insights</li>
-              <li>Création & Génération de Contenu : Canva, Adobe Suite, Figma, ChatGPT, Ideogram, Midjourney</li>
-              <li>Automatisation & Productivité : Zapier</li>
+             
+            <li>Création & Graphisme : Canva, Adobe Suite, Figma</li>
+            <li>Génération de Contenu : ChatGPT, Ideogram, Midjourney</li>
+            <li>Automatisation & Productivité : Zapier</li>
+            <li>Collaboration : Trello</li>
             </ul>
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>

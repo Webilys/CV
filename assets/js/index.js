@@ -1,3 +1,63 @@
+//animation section A propos
+
+const sectionApropos = document.getElementById("a-propos");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        sectionApropos.style.animation =
+          "animationEnterSectionApropos 1s linear forwards";
+      }
+    });
+  },
+  {
+    threshold: 0.3,
+  }
+);
+
+observer.observe(sectionApropos);
+
+//animation section Skills
+
+const sectionSkills = document.getElementById("skills");
+
+const observer2 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        sectionSkills.style.animation =
+          "animationEnterSectionSkills 1s linear forwards";
+      }
+    });
+  },
+  {
+    threshold: 0.3,
+  }
+);
+
+observer2.observe(sectionSkills);
+
+//animation section Formations
+
+const sectionFormations = document.getElementById("formations");
+
+const observer3 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        sectionFormations.style.animation =
+          "animationEnterSectionFormations 1s linear forwards";
+      }
+    });
+  },
+  {
+    threshold: 0.3,
+  }
+);
+
+observer3.observe(sectionFormations);
+
 //----------------------Buttons-------------------------------------------
 
 const btnAboutUs = document.getElementById("btn-about-us");

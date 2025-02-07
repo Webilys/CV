@@ -1,21 +1,25 @@
-#competences {
+#skills {
   margin: 50px auto;
+  // transform: translateX(-1500px);
+  opacity: 0;
 
-  h2,
-  h3 {
-    width: auto;
+  h2 {
+    width: 100%;
+    text-align: center !important;
+    margin: 0 auto 50px;
     text-transform: uppercase;
     @include textGradient;
   }
 
-  h2 {
-    text-align: center !important;
-    margin: 0 auto 50px;
-  }
-
   h3 {
+    width: auto;
+    width: 100%;
+    text-align: center !important;
+    text-transform: uppercase;
+    @include textGradient;
+
     &:after {
-      @include afterBorderGradient;
+      @include afterBorderGradientCenter;
     }
   }
 

@@ -22,7 +22,7 @@ echo '
                 <a class="nav-link" href="#a-propos">À propos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#competences">Compétences</a>
+                <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#formations">Formations</a>

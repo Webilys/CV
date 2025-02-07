@@ -14,6 +14,10 @@
   @include borderGradient;
   @include textGradient;
 
+  transition: animation 0.2s ease;
+  transform: translateX(100px);
+  animation: animationEnterButtonCall 1s linear forwards;
+
   &:hover {
     transform: scale(1.05);
     @include borderGradient2;

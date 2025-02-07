@@ -1,10 +1,10 @@
 #a-propos {
-  padding: 50px;
+  padding: 30px 50px;
   color: $white;
   margin: 50px auto;
   overflow: visible;
-
   @include borderGradient;
+  transform: scale(0);
 
   @media screen and (max-width: 576px) {
     padding: 20px;
