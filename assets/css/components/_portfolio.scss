@@ -71,8 +71,11 @@
       cursor: pointer;
       margin: 40px;
       transition: transform 0.3s;
-      @include textGradient;
+      @include textGradientCenter;
       @include borderGradient;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       @media screen and (max-width: 760px) {
         margin: 10px;

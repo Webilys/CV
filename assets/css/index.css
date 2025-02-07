@@ -676,7 +676,7 @@ a {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
-  display: inline-block;
+  text-align: center;
   background: linear-gradient(45deg, #764d82, #b86465, #eeaa46);
   background-clip: text;
   -webkit-background-clip: text;
@@ -685,6 +685,15 @@ a {
   border-style: solid;
   -o-border-image: linear-gradient(45deg, #764d82, #b86465, #eeaa46) 1;
      border-image: linear-gradient(45deg, #764d82, #b86465, #eeaa46) 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (max-width: 760px) {
   #portfolio .gallery-wrap #backBtn,
