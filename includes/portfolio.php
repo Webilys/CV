@@ -3,7 +3,7 @@ echo '
     <section id="portfolio">
       <h2 class="mb-4">Portfolio</h2>
       <div class="gallery-wrap">
-        <i class="bi bi-arrow-left-circle-fill" id="backBtn"></i>
+        <i class="bi bi-caret-left" id="backBtn"></i>
         <div class="gallery">
           <div>
             <a href="https://webilys.fr/" target="_blank">
@@ -114,7 +114,7 @@ echo '
             </a>
           </div>
         </div>
-        <i class="bi bi-arrow-right-circle-fill" id="nextBtn"></i>
+        <i class="bi bi-caret-right" id="nextBtn"></i>
       </div>
     </section>
     ';

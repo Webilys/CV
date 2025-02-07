@@ -81,6 +81,14 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+@mixin textGradientCenter {
+  text-align: center;
+  background: $degrade;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @mixin textGradient2 {
   background: $degrade2;
   background-clip: text;
