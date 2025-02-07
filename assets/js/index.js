@@ -7,12 +7,12 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         sectionApropos.style.animation =
-          "animationEnterSectionApropos 1s linear forwards";
+          "animationEnterSectionApropos 0.7s linear forwards";
       }
     });
   },
   {
-    threshold: 0.3,
+    threshold: 0.05,
   }
 );
 
@@ -27,12 +27,12 @@ const observer2 = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         sectionSkills.style.animation =
-          "animationEnterSectionSkills 1s linear forwards";
+          "animationEnterSectionSkills 0.7s linear forwards";
       }
     });
   },
   {
-    threshold: 0.3,
+    threshold: 0.05,
   }
 );
 
@@ -47,16 +47,56 @@ const observer3 = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         sectionFormations.style.animation =
-          "animationEnterSectionFormations 1s linear forwards";
+          "animationEnterSectionFormations 0.7s linear forwards";
       }
     });
   },
   {
-    threshold: 0.1,
+    threshold: 0.05,
   }
 );
 
 observer3.observe(sectionFormations);
+
+//animation section Portfolio
+
+const sectionPortfolio = document.getElementById("portfolio");
+
+const observer4 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        sectionPortfolio.style.animation =
+          "animationEnterSectionApropos 0.7s linear forwards";
+      }
+    });
+  },
+  {
+    threshold: 0.05,
+  }
+);
+
+observer4.observe(sectionPortfolio);
+
+//animation section Contact
+
+const sectionContact = document.getElementById("contact");
+
+const observer5 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        sectionContact.style.animation =
+          "animationEnterSectionSkills 0.7s linear forwards";
+      }
+    });
+  },
+  {
+    threshold: 0.05,
+  }
+);
+
+observer5.observe(sectionContact);
 
 //----------------------Buttons-------------------------------------------
 
@@ -101,12 +141,6 @@ backBtn.addEventListener("click", () => {
     scrollContainer.scrollLeft -= 856;
   }
 });
-
-// scrollContainer.addEventListener("wheel", (evt) => {
-//   //   evt.preventDefault();
-//   //   scrollContainer.scrollLeft += evt.deltaY;
-//   //   scrollContainer.style.scrollBehavior = "auto";
-// });
 
 //----------------- CONTACT -------------------------------------------------------
 $(function () {

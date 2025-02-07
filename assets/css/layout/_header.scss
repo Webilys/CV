@@ -2,7 +2,7 @@ header {
   padding-top: 20px;
   transition: animation 0.2s ease;
   transform: translateY(-200px);
-  animation: animationEnterHeader 1s linear forwards;
+  animation: animationEnterHeader 0.8s linear forwards;
 
   .container-fluid {
     padding: 0;
@@ -35,6 +35,14 @@ header {
   }
 
   nav {
+    @media screen and (max-width: 768px) {
+      background: $bg;
+    }
+
+    .navbar-toggler {
+      @include borderGradient;
+    }
+
     ul {
       li {
         filter: drop-shadow(0 0 5px $black);

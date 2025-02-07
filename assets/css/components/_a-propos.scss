@@ -12,7 +12,6 @@
 
   h2 {
     text-transform: uppercase;
-    // text-shadow: 0 0 10px $black;
     @include textGradient;
 
     &:after {

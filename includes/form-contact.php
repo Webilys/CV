@@ -34,7 +34,7 @@ echo ' <section id="contact">
 
         <div class="col-md-12">
           <label for="message">Message<span class="colorized"> *</span></label>
-          <textarea id="message" name="message" class="form-control" rows="4"
+          <textarea id="message" name="message" class="form-control" rows="10"
             placeholder="Votre message"></textarea>
           <p class="comments"></p>
         </div>

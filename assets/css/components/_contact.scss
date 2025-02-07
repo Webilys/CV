@@ -1,31 +1,25 @@
 #contact {
   margin: 50px auto;
-  background: $degrade;
-  border-radius: 10px;
-  padding: 50px;
+  padding: 30px 50px;
+  @include borderGradient;
+  opacity: 0;
 
   @media screen and (max-width: 576px) {
     padding: 20px;
   }
 
   h2 {
-    color: $white;
-    text-shadow: 0 0 10px $black;
     text-transform: uppercase;
     padding-bottom: 10px;
-    text-align: center;
+
+    @include textGradientCenter;
 
     @media screen and (max-width: 576px) {
       padding-bottom: 0;
     }
 
     &:after {
-      content: "";
-      display: block;
-      width: 40px;
-      margin: 20px auto;
-      border: 1.5px solid $white;
-      box-shadow: 0 0 10px $black;
+      @include afterBorderGradientCenter;
     }
   }
 
@@ -34,50 +28,58 @@
   }
 
   .colorized {
-    color: $color1;
+    color: $white;
+    font-size: 0.8rem;
   }
 
   label {
-    padding-bottom: 20px;
-    color: $white;
-    text-shadow: 0 0 5px $blackShadow;
+    padding-bottom: 10px;
+    @include textGradient;
   }
+
   input[type="text"],
   input[type="email"],
   input[type="tel"],
   textarea {
-    border-radius: 360px;
-    box-shadow: 0 0 5px $blackShadow;
+    background: none;
   }
   .form-control {
     height: 40px;
-    background: transparent;
-    border: 2px solid $white;
     color: $white;
-    text-shadow: 0 0 5px $blackShadow;
+    @include borderGradient;
 
     &::placeholder {
       color: $color4;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      @include borderGradient2;
     }
   }
 
   .comments {
     font-style: italic;
     color: $color3;
-    height: 25px;
+    height: 15px;
+    padding-top: 2px;
+    font-size: 0.8rem;
   }
 
   .strong {
     padding-bottom: 10px;
-    font-size: 0.9rem;
-    text-shadow: 0 0 5px $blackShadow;
+    font-size: 0.8rem;
   }
 
   .thank-you {
     text-align: center;
     margin-top: 15px;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    @include borderGradient;
+    background: $degrade;
     color: $white;
+    padding: 20px;
   }
 }

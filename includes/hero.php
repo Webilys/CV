@@ -2,7 +2,7 @@
 
 echo '
 <section class="hero">
-          <div class="col-3 hero-container">
+          <div class="col-4 hero-container">
             <h1>Priscilla MEZOUAR</h1>
             <p>Développeuse web fullstack</p>
             <button class="buttonDegrade" id="btn-about-us">

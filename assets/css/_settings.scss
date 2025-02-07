@@ -14,7 +14,7 @@ $degrade2: linear-gradient(45deg, #eeaa46, #b86465, #764d82);
 $color1: #eeaa46;
 $color2: #764d82;
 $color3: #d82c2e;
-$color4: #dadada;
+$color4: #ececec;
 $white: #fff;
 $black: #000;
 $bg: #13161d;
@@ -28,7 +28,7 @@ $whiteOverlay: rgba(255, 255, 255, 0.9);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // user-select: none;
+  user-select: none;
   font-family: $font1;
   cursor: default;
 }
@@ -96,6 +96,13 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+@mixin textGradientCenter2 {
+  text-align: center;
+  background: $degrade2;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 @keyframes animationEnterHero {
   0% {
     transform: translateX(-600px);

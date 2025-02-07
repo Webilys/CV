@@ -1,0 +1,25 @@
+.legal {
+  .container-legal {
+    margin: 50px auto;
+    color: $white;
+
+    h2 {
+      @include textGradient;
+      margin-top: 20px;
+
+      &:after {
+        @include afterBorderGradient;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      @include textGradient;
+      transition: 0.2s ease;
+
+      &:hover {
+        @include textGradient2;
+      }
+    }
+  }
+}

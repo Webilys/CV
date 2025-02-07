@@ -3,16 +3,18 @@ footer {
 
   p {
     font-size: 0.8rem;
-    color: $white;
+    @include textGradient;
   }
 
   a {
     font-size: 0.8rem;
     text-decoration: none;
-    color: $white;
+    @include textGradient;
+    cursor: pointer;
+    transition: 0.2s ease;
 
     &:hover {
-      color: $color1;
+      @include textGradient2;
     }
   }
 }

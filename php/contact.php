@@ -14,14 +14,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $emailText = "";
 
     if (empty($array["firstname"])) {
-        $array["firstnameError"] = "Je veux connaître ton prénom !";
+        $array["firstnameError"] = "Veuillez entrer votre prénom";
         $array["isSucces"] = false;
     } else {
         $emailText .= "Prénom : {$array["firstname"]}\n";
     }
 
     if (empty($array["name"])) {
-        $array["nameError"] = "Je veux connaître ton nom !";
+        $array["nameError"] = "Veuillez entrer votre nom";
         $array["isSucces"] = false;
     } else {
         $emailText .= "Nom : {$array["name"]}\n";
@@ -29,21 +29,21 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
     if (!isEmail($array["email"])) {
-        $array["emailError"] = "Ajoute ton email !";
+        $array["emailError"] = "Veuillez entrer une adresse email valide";
         $array["isSucces"] = false;
     } else {
         $emailText .= "Email : {$array["email"]}\n";
     }
 
     if (!isPhone($array["telephone"])) {
-        $array["telephoneError"] = "Ajoute ton numéro !";
+        $array["telephoneError"] = "Veuillez entrer un numéro de téléphone valide";
         $array["isSucces"] = false;
     } else {
         $emailText .= "Tel. : {$array["telephone"]}\n";
     }
 
     if (empty($array["message"])) {
-        $array["messageError"] = "Écris-moi un message !";
+        $array["messageError"] = "Veuillez saisir votre message";
         $array["isSucces"] = false;
     } else {
         $emailText .= "Message : {$array["message"]}\n";

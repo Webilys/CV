@@ -16,7 +16,7 @@
 
   transition: animation 0.2s ease;
   transform: translateX(100px);
-  animation: animationEnterButtonCall 1s linear forwards;
+  animation: animationEnterButtonCall 0.8s linear forwards;
 
   &:hover {
     transform: scale(1.05);
