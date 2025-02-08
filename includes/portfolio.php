@@ -11,6 +11,12 @@ echo '
             </a>
 
           </div>
+           <div>
+            <a href="https://notes-app.webilys.fr/" target="_blank">
+              <img src="./assets/img/notes-app.png" alt="Notes App" />
+            </a>
+
+          </div>
           <div>
             <a href="https://voice-converter.webilys.fr/" target="_blank">
               <img src="./assets/img/voice-converter.png" alt="Voice Converter" />
