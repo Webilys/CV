@@ -143,10 +143,10 @@ backBtn.addEventListener("click", () => {
 });
 
 //----------------- CONTACT -------------------------------------------------------
-$(function () {
+$(document).ready(function () {
   $("#contact-form").submit(function (e) {
     e.preventDefault();
-    $(".comments").empty();
+    $(".comments").text(""); // Vide les messages d'erreur existants
 
     var postdata = $("#contact-form").serialize();
 
@@ -162,11 +162,11 @@ $(function () {
           );
           $("#contact-form")[0].reset();
         } else {
-          $("#firstname + .comments").html(result.firstnameError);
-          $("#name + .comments").html(result.nameError);
-          $("#email + .comments").html(result.emailError);
-          $("#telephone + .comments").html(result.telephoneError);
-          $("#message + .comments").html(result.messageError);
+          $("#firstname").next(".comments").text(result.firstnameError);
+          $("#name").next(".comments").text(result.nameError);
+          $("#email").next(".comments").text(result.emailError);
+          $("#telephone").next(".comments").text(result.telephoneError);
+          $("#message").next(".comments").text(result.messageError);
         }
       },
     });
