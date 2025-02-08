@@ -66,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $headers .= "Reply-To: {$array["email"]}\r\n";
         $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-        mail($emailTo, "Formulaire de contact Webilys", $emailText, $headers);
+        mail($emailTo, "Formulaire de contact CV Priscilla Mezouar", $emailText, $headers);
     }
 
     echo json_encode($array);
