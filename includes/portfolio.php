@@ -64,7 +64,7 @@ echo '
           </div>
           <div>
 
-            <a href="https://danyprovenceherbes.com" target="_blank">
+            <a href="https://danyprovenceherbes.fr" target="_blank">
               <img src="./assets/img/dany-provence-herbes.png" alt="Dany Provence Herbes" />
             </a>
           </div>
