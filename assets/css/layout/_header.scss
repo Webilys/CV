@@ -19,6 +19,10 @@ header {
     @include borderGradient;
     filter: drop-shadow(0 0 5px $black);
 
+    @media screen and (max-width: 768px) {
+      filter: drop-shadow(0 0 5px $white);
+    }
+
     &:hover {
       @include borderGradient2;
 
@@ -31,14 +35,14 @@ header {
       width: 100px;
       filter: drop-shadow(0 0 5px $black);
       cursor: pointer;
+
+      @media screen and (max-width: 768px) {
+        filter: drop-shadow(0 0 5px $white);
+      }
     }
   }
 
   nav {
-    @media screen and (max-width: 768px) {
-      background: $bg;
-    }
-
     .navbar-toggler {
       @include borderGradient;
     }

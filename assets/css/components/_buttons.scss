@@ -9,6 +9,10 @@
   @include borderGradient;
   @include textGradient;
 
+  @media screen and (max-width: 768px) {
+    filter: drop-shadow(0 0 5px $white);
+  }
+
   &:hover {
     transform: scale(1.05);
     @include borderGradient2;

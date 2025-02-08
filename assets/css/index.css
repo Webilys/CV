@@ -206,6 +206,11 @@ a {
   background-attachment: fixed;
   height: 100vh;
 }
+@media screen and (max-width: 768px) {
+  .container-hero-bg {
+    background: url(../img/hero-mobile.png) center/cover;
+  }
+}
 
 .buttonDegrade {
   padding: 10px 30px;
@@ -232,6 +237,12 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 768px) {
+  .buttonDegrade {
+    -webkit-filter: drop-shadow(0 0 5px #fff);
+            filter: drop-shadow(0 0 5px #fff);
+  }
 }
 .buttonDegrade:hover {
   -webkit-transform: scale(1.05);
@@ -293,6 +304,12 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 768px) {
+  .hero .hero-container h1 {
+    -webkit-filter: drop-shadow(0 0 5px #fff);
+            filter: drop-shadow(0 0 5px #fff);
+  }
 }
 .hero .hero-container p {
   padding-bottom: 30px;
@@ -691,7 +708,7 @@ a {
 @media screen and (max-width: 760px) {
   #portfolio .gallery-wrap #backBtn,
   #portfolio .gallery-wrap #nextBtn {
-    margin: 10px;
+    display: none;
   }
 }
 #portfolio .gallery-wrap #backBtn:hover,
@@ -865,6 +882,12 @@ a {
   -webkit-animation: animationEnterButtonCall 0.8s linear forwards;
           animation: animationEnterButtonCall 0.8s linear forwards;
 }
+@media screen and (max-width: 768px) {
+  #button-call-fixed {
+    -webkit-filter: drop-shadow(0 0 5px #fff);
+            filter: drop-shadow(0 0 5px #fff);
+  }
+}
 #button-call-fixed:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -979,6 +1002,12 @@ header .logo {
   -webkit-filter: drop-shadow(0 0 5px #000);
           filter: drop-shadow(0 0 5px #000);
 }
+@media screen and (max-width: 768px) {
+  header .logo {
+    -webkit-filter: drop-shadow(0 0 5px #fff);
+            filter: drop-shadow(0 0 5px #fff);
+  }
+}
 header .logo:hover {
   border-width: 2px;
   border-style: solid;
@@ -996,8 +1025,9 @@ header .logo img {
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-  header nav {
-    background: #13161d;
+  header .logo img {
+    -webkit-filter: drop-shadow(0 0 5px #fff);
+            filter: drop-shadow(0 0 5px #fff);
   }
 }
 header nav .navbar-toggler {
