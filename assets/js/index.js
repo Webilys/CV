@@ -146,28 +146,39 @@ backBtn.addEventListener("click", () => {
 $(document).ready(function () {
   $("#contact-form").submit(function (e) {
     e.preventDefault();
-    $(".comments").text(""); // Vide les messages d'erreur existants
+    $(".comments").empty();
 
     var postdata = $("#contact-form").serialize();
 
     $.ajax({
       type: "POST",
-      url: "php/contact.php",
+      url: "./php/contact.php",
       data: postdata,
       dataType: "json",
       success: function (result) {
         if (result.isSucces) {
-          $("#contact-form").append(
+          let thankYouMessage = $(
             "<p class='thank-you'>Votre message a bien été envoyé. Merci de m'avoir contacté.</p>"
           );
+          $("#contact-form").append(thankYouMessage);
           $("#contact-form")[0].reset();
+
+          // Supprimer le message après 5 secondes (5000ms)
+          setTimeout(function () {
+            thankYouMessage.fadeOut("slow", function () {
+              $(this).remove();
+            });
+          }, 5000);
         } else {
-          $("#firstname").next(".comments").text(result.firstnameError);
-          $("#name").next(".comments").text(result.nameError);
-          $("#email").next(".comments").text(result.emailError);
-          $("#telephone").next(".comments").text(result.telephoneError);
-          $("#message").next(".comments").text(result.messageError);
+          $("#firstname + .comments").html(result.firstnameError);
+          $("#name + .comments").html(result.nameError);
+          $("#email + .comments").html(result.emailError);
+          $("#telephone + .comments").html(result.telephoneError);
+          $("#message + .comments").html(result.messageError);
         }
+      },
+      error: function () {
+        alert("Une erreur est survenue. Veuillez réessayer plus tard.");
       },
     });
   });
