@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Priscilla MEZOUAR - Développeuse web FullStack</title>
-  <link rel="shortcut icon" href="./assets/img/icon.ico" />
+  <link rel="icon" href="/assets/img/icon.ico" type="image/x-icon">
   <?php include "./includes/links-head.php"; ?>
 </head>
 
