@@ -9,7 +9,11 @@ echo '
             <a href="https://webilys.fr/" target="_blank">
               <img src="./assets/img/webilys.png" alt="Webilys" />
             </a>
-
+          </div>
+          <div>
+            <a href="https://pokedex.webilys.fr/" target="_blank">
+              <img src="./assets/img/pokedex.png" alt="Pokedex" />
+            </a>
           </div>
           <div>
             <a href="https://e-volution.webilys.fr/" target="_blank">
