@@ -117,30 +117,89 @@ buttonCallFixed.addEventListener("click", () => {
 });
 
 //----------------------Gallery-------------------------------------------
-let portfolioSection = document.getElementById("portfolio");
-let scrollContainer = document.querySelector(".gallery");
-let backBtn = document.getElementById("backBtn");
-let nextBtn = document.getElementById("nextBtn");
 
-nextBtn.addEventListener("click", () => {
-  if (window.innerWidth < 760) {
-    scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft += 311;
-  } else {
-    scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft += 856;
-  }
-});
+// let portfolioSection = document.getElementById("portfolio");
+// let scrollContainer = document.querySelector(".gallery");
+
+// nextBtn.addEventListener("click", () => {
+//   if (window.innerWidth < 760) {
+//     scrollContainer.style.scrollBehavior = "smooth";
+//     scrollContainer.scrollLeft += 311;
+//   } else {
+//     scrollContainer.style.scrollBehavior = "smooth";
+//     scrollContainer.scrollLeft += 856;
+//   }
+// });
+
+// backBtn.addEventListener("click", () => {
+//   if (window.innerWidth < 760) {
+//     scrollContainer.style.scrollBehavior = "smooth";
+//     scrollContainer.scrollLeft -= 311;
+//   } else {
+//     scrollContainer.style.scrollBehavior = "smooth";
+//     scrollContainer.scrollLeft -= 856;
+//   }
+// });
+
+//----------------- PORTFOILIO-------------------
+let currentIndex = 0;
+const galleryItems = document.querySelectorAll(".gallery-item");
+const backBtn = document.getElementById("backBtn");
+const nextBtn = document.getElementById("nextBtn");
+let itemsPerPage = 1;
+
+// Fonction pour mettre à jour le nombre d'éléments visibles selon la largeur de l'écran
+
+// Fonction pour mettre à jour la galerie (affichage des éléments visibles)
+
+function updateGallery() {
+  galleryItems.forEach((item, index) => {
+    if (index >= currentIndex && index < currentIndex + itemsPerPage) {
+      item.style.display = "flex";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
 
 backBtn.addEventListener("click", () => {
-  if (window.innerWidth < 760) {
-    scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft -= 311;
+  if (currentIndex > 0) {
+    currentIndex--;
   } else {
-    scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft -= 856;
+    currentIndex = galleryItems.length - itemsPerPage;
   }
+  updateGallery();
 });
+
+// Fonction pour passer à l'élément suivant
+nextBtn.addEventListener("click", () => {
+  if (currentIndex + itemsPerPage < galleryItems.length) {
+    currentIndex++;
+  } else {
+    currentIndex = 0;
+  }
+  updateGallery();
+});
+
+function suivant() {
+  if (currentIndex + itemsPerPage < galleryItems.length) {
+    currentIndex++;
+  } else {
+    currentIndex = 0;
+  }
+  updateGallery();
+}
+
+// Fonction pour activer le défilement automatique
+function autoScroll() {
+  setInterval(() => {
+    suivant();
+  }, 5000);
+}
+
+// Initialisation
+updateGallery();
+autoScroll();
 
 //----------------- CONTACT -------------------------------------------------------
 $(document).ready(function () {

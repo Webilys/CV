@@ -35,13 +35,14 @@
         display: none;
       }
 
-      div {
+      .gallery-item {
         width: 100%;
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
         gap: 20px;
         padding: 10px;
         flex: none;
+        scroll-behavior: smooth;
 
         a {
           width: 100%;
